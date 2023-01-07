@@ -114,6 +114,11 @@ end
 local function turn(direction, turns)
     turns = turns or 1
 
+    if direction == 'back' then
+        direction = 'left'
+        turns = turns * 2
+    end
+
     for i = 1, turns do
         if not _getFunctionByName('turn', direction)() then
             return false
@@ -121,11 +126,6 @@ local function turn(direction, turns)
     end
 
     return true
-end
-
---- @return boolean
-local function turnBack()
-    return turn('left', 2)
 end
 
 --- @param direction string
