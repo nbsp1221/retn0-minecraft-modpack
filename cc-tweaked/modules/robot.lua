@@ -1,5 +1,6 @@
 --- @param name string
 --- @param direction string
+--- @return function
 local function _getFunctionByName(name, direction)
     local fn = nil
 
@@ -35,7 +36,7 @@ local function _getFunctionByName(name, direction)
 end
 
 --- @return number
-local function getAllItemCount()
+local function getAllItemsCount()
     local count = 0
 
     for i = 1, 16 do
@@ -46,7 +47,7 @@ local function getAllItemCount()
 end
 
 --- @return number
-local function getAllItemSpace()
+local function getAllItemsSpace()
     local space = 0
 
     for i = 1, 16 do
@@ -144,16 +145,16 @@ local function safeDig(direction, name)
         return false
     end
 
-    if data.name == name then
-        return dig(direction)
+    if data.name ~= name then
+        error('unexpected block: ' .. data.name .. ' (expected: ' .. name ..')')
     end
 
-    error('unexpected block: ' .. data.name .. ' (expected: ' .. name ..')')
+    return dig(direction)
 end
 
 return {
-    getAllItemCount = getAllItemCount,
-    getAllItemSpace = getAllItemSpace,
+    getAllItemsCount = getAllItemsCount,
+    getAllItemsSpace = getAllItemsSpace,
     refuel = refuel,
     suck = suck,
     suckAll = suckAll,
@@ -162,7 +163,6 @@ return {
     go = go,
     goContinuously = goContinuously,
     turn = turn,
-    turnBack = turnBack,
     dig = dig,
     safeDig = safeDig,
 }
