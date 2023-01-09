@@ -1,7 +1,7 @@
 --- @param name string
 --- @param direction string
 --- @return function
-local function _getFunctionByName(name, direction)
+local function _getFunction(name, direction)
     local fn = nil
 
     if name == 'go' then
@@ -57,7 +57,7 @@ local function getAllItemsSpace()
     return space
 end
 
-local function refuel()
+local function refuelAll()
     for i = 1, 16 do
         turtle.select(i)
         turtle.refuel()
@@ -65,9 +65,10 @@ local function refuel()
 end
 
 --- @param direction string
+--- @param count number | nil
 --- @return boolean
-local function suck(direction)
-    return _getFunctionByName('suck', direction)()
+local function suck(direction, count)
+    return _getFunction('suck', direction)(count)
 end
 
 --- @param direction string
@@ -76,9 +77,10 @@ local function suckAll(direction)
 end
 
 --- @param direction string
+--- @param count number | nil
 --- @return boolean
-local function drop(direction)
-    return _getFunctionByName('drop', direction)()
+local function drop(direction, count)
+    return _getFunction('drop', direction)(count)
 end
 
 --- @param direction string
@@ -96,7 +98,7 @@ local function go(direction, distance)
     distance = distance or 1
 
     for i = 1, distance do
-        if not _getFunctionByName('go', direction)() then
+        if not _getFunction('go', direction)() then
             return false
         end
     end
@@ -121,7 +123,7 @@ local function turn(direction, turns)
     end
 
     for i = 1, turns do
-        if not _getFunctionByName('turn', direction)() then
+        if not _getFunction('turn', direction)() then
             return false
         end
     end
@@ -129,17 +131,18 @@ local function turn(direction, turns)
     return true
 end
 
+
 --- @param direction string
 --- @return boolean
 local function dig(direction)
-    return _getFunctionByName('dig', direction)()
+    return _getFunction('dig', direction)()
 end
 
 --- @param direction string
 --- @param name string
 --- @return boolean
 local function safeDig(direction, name)
-    local isExists, data = _getFunctionByName('inspect', direction)()
+    local isExists, data = _getFunction('inspect', direction)()
 
     if not isExists then
         return false
@@ -155,7 +158,7 @@ end
 return {
     getAllItemsCount = getAllItemsCount,
     getAllItemsSpace = getAllItemsSpace,
-    refuel = refuel,
+    refuelAll = refuelAll,
     suck = suck,
     suckAll = suckAll,
     drop = drop,

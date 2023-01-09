@@ -5,7 +5,7 @@ local sugarcaneSectionLength = 30
 
 while true do
     robot.suckAll('down')
-    robot.refuel()
+    robot.refuelAll()
     robot.dropAll('down')
     robot.go('front', 3)
     robot.turn('left')
