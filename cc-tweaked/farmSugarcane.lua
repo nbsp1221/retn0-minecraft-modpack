@@ -1,155 +1,67 @@
-local function getItemsCount()
-    local count = 0
+local robot = require('robot')
 
-    for i = 1, 16 do
-        count = count + turtle.getItemCount(i)
-    end
+local sugarcaneSectionCount = 11
+local sugarcaneSectionLength = 30
 
-    return count
-end
+while true do
+    robot.suckAll('down')
+    robot.refuel()
+    robot.dropAll('down')
+    robot.go('front', 3)
+    robot.turn('left')
+    robot.go('front')
+    robot.turn('right')
 
-local function getItemsSpace()
-    local space = 0
-
-    for i = 1, 16 do
-        space = space + turtle.getItemSpace(i)
-    end
-
-    return space
-end
-
-local function refuelAll()
-    for i = 1, 16 do
-        turtle.select(i)
-        turtle.refuel()
-    end
-end
-
-local function dropAllItems(direction)
-    local drop = nil
-
-    if direction == "up" then
-        drop = turtle.dropUp
-    elseif direction == "down" then
-        drop = turtle.dropDown
-    else
-        drop = turtle.drop
-    end
-
-    for i = 1, 16 do
-        turtle.select(i)
-        drop()
-    end
-end
-
-local function suckAllItems(direction)
-    local suck = nil
-
-    if direction == "up" then
-        suck = turtle.suckUp
-    elseif direction == "down" then
-        suck = turtle.suckDown
-    else
-        suck = turtle.suck
-    end
-
-    while suck() do end
-end
-
-local function farmSugarcane(length)
-    for i = 1, length do
-        turtle.dig()
-        turtle.forward()
-        turtle.digDown()
-    end
-
-    for i = 1, 2 do
-        turtle.turnLeft()
-        turtle.dig()
-        turtle.forward()
-        turtle.digDown()
-    end
-
-    for i = 1, length - 2 do
-        turtle.dig()
-        turtle.forward()
-        turtle.digDown()
-    end
-end
-
-local function returnHome()
-    turtle.forward()
-    turtle.turnLeft()
-
-    while not turtle.detect() do
-        turtle.forward()
-    end
-
-    turtle.turnRight()
-    turtle.forward()
-end
-
-local function main()
-    local sugarcaneFarmCount = 11
-    local sugarcaneFarmLength = 30
-
-    while true do
-        if turtle.getFuelLevel() < turtle.getFuelLimit() then
-            suckAllItems("down")
-            refuelAll()
-            dropAllItems("down")
+    for i = 1, sugarcaneSectionCount do
+        for j = 1, sugarcaneSectionLength do
+            robot.safeDig('front', 'minecraft:sugar_cane')
+            robot.go('front')
+            robot.safeDig('down', 'minecraft:sugar_cane')
         end
 
-        turtle.forward()
-        turtle.forward()
-        turtle.forward()
-        turtle.turnLeft()
-        turtle.forward()
-        turtle.turnRight()
+        for j = 1, 2 do
+            robot.turn('left')
+            robot.safeDig('front', 'minecraft:sugar_cane')
+            robot.go('front')
+            robot.safeDig('down', 'minecraft:sugar_cane')
+        end
 
-        for i = 1, sugarcaneFarmCount do
-            farmSugarcane(sugarcaneFarmLength)
+        for j = 1, sugarcaneSectionLength - 2 do
+            robot.safeDig('front', 'minecraft:sugar_cane')
+            robot.go('front')
+            robot.safeDig('down', 'minecraft:sugar_cane')
+        end
 
-            if i < sugarcaneFarmCount then
-                if getItemsSpace() < sugarcaneFarmLength * 4 then
-                    returnHome()
-                    dropAllItems("down")
+        robot.go('front')
 
-                    turtle.turnLeft()
-                    turtle.turnLeft()
-                    turtle.forward()
-                    turtle.turnLeft()
-                    turtle.forward()
-
-                    for j = 1, i * 3 do
-                        turtle.forward()
-                    end
-                else
-                    turtle.forward()
-                    turtle.turnRight()
-                    turtle.forward()
-                    turtle.forward()
-                end
-
-                turtle.turnRight()
+        if i < sugarcaneSectionCount then
+            if robot.getAllItemsSpace() < sugarcaneSectionLength * 4 then
+                robot.turn('left')
+                robot.goContinuously('front')
+                robot.turn('right')
+                robot.go('front')
+                robot.dropAll('down')
+                robot.turn('back')
+                robot.go('front')
+                robot.turn('left')
+                robot.go('front', i * 3 + 1)
+            else
+                robot.turn('right')
+                robot.go('front', 2)
             end
+
+            robot.turn('right')
         end
-
-        returnHome()
-        dropAllItems("down")
-
-        turtle.forward()
-        turtle.forward()
-        turtle.turnLeft()
-        turtle.turnLeft()
-
-        if getItemsCount() > 0 then
-            return
-        end
-
-        -- 30 minutes
-        sleep(1800)
     end
-end
 
-main()
+    robot.turn('left')
+    robot.goContinuously('front')
+    robot.turn('right')
+    robot.go('front')
+    robot.dropAll('down')
+    robot.go('front', 2)
+    robot.turn('back')
+
+    -- 30 minutes
+    sleep(1800)
+end
