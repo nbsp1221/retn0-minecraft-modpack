@@ -131,7 +131,6 @@ local function turn(direction, turns)
     return true
 end
 
-
 --- @param direction string
 --- @return boolean
 local function dig(direction)
@@ -141,10 +140,10 @@ end
 --- @param direction string
 --- @param name string
 --- @return boolean
-local function safeDig(direction, name)
-    local isExists, data = _getFunction('inspect', direction)()
+local function digByName(direction, name)
+    local success, data = _getFunction('inspect', direction)()
 
-    if not isExists then
+    if not success then
         return false
     end
 
@@ -167,5 +166,5 @@ return {
     goContinuously = goContinuously,
     turn = turn,
     dig = dig,
-    safeDig = safeDig,
+    digByName = digByName,
 }

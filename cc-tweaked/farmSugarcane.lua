@@ -14,22 +14,22 @@ while true do
 
     for i = 1, sugarcaneSectionCount do
         for j = 1, sugarcaneSectionLength do
-            robot.safeDig('front', 'minecraft:sugar_cane')
+            robot.digByName('front', 'minecraft:sugar_cane')
             robot.go('front')
-            robot.safeDig('down', 'minecraft:sugar_cane')
+            robot.digByName('down', 'minecraft:sugar_cane')
         end
 
         for j = 1, 2 do
             robot.turn('left')
-            robot.safeDig('front', 'minecraft:sugar_cane')
+            robot.digByName('front', 'minecraft:sugar_cane')
             robot.go('front')
-            robot.safeDig('down', 'minecraft:sugar_cane')
+            robot.digByName('down', 'minecraft:sugar_cane')
         end
 
         for j = 1, sugarcaneSectionLength - 2 do
-            robot.safeDig('front', 'minecraft:sugar_cane')
+            robot.digByName('front', 'minecraft:sugar_cane')
             robot.go('front')
-            robot.safeDig('down', 'minecraft:sugar_cane')
+            robot.digByName('down', 'minecraft:sugar_cane')
         end
 
         robot.go('front')
