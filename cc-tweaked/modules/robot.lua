@@ -1,3 +1,5 @@
+local utils = require('utils')
+
 --- @param name string
 --- @param direction string
 --- @return function
@@ -154,6 +156,75 @@ local function digByName(direction, name)
     return dig(direction)
 end
 
+--- @param direction string
+--- @param distance number
+local function digLine(direction, distance)
+    for i = 1, distance do
+        dig(direction)
+        go(direction)
+    end
+end
+
+--- @param x number
+--- @param y number
+--- @param options table | nil
+local function digToXY(x, y, options)
+    options = options or {}
+
+    if x == 0 and y == 0 then
+        return
+    end
+
+    if x == 0 then
+        if y < 0 then
+            turn('back')
+        end
+    else
+        turn(utils.fif(x > 0, 'right', 'left'))
+    end
+
+    local readyNextLine = function (direction)
+        turn(direction)
+        digLine('front', 1)
+        turn(direction)
+    end
+
+    if x == 0 or y == 0 then
+        digLine('front', math.max(math.abs(x), math.abs(y)))
+    else
+        for i = 0, math.abs(y) do
+            digLine('front', math.abs(x))
+
+            if i < math.abs(y) then
+                if x * y > 0 then
+                    readyNextLine(utils.fif(i % 2 == 0, 'left', 'right'))
+                else
+                    readyNextLine(utils.fif(i % 2 == 0, 'right', 'left'))
+                end
+            end
+        end
+    end
+
+    if options.keepFirst then
+        if x == 0 or y == 0 then
+            turn('back')
+            go('front', math.max(math.abs(x), math.abs(y)))
+        else
+            if math.abs(y) % 2 == 0 then
+                turn('back')
+                go('front', math.abs(x))
+            end
+
+            turn(utils.fif(x * y > 0, 'left', 'right'))
+            go('front', math.abs(y))
+        end
+
+        if y >= 0 then
+            turn(utils.fif(y > 0, 'back', utils.fif(x > 0, 'right', 'left')))
+        end
+    end
+end
+
 return {
     getAllItemsCount = getAllItemsCount,
     getAllItemsSpace = getAllItemsSpace,
@@ -167,4 +238,6 @@ return {
     turn = turn,
     dig = dig,
     digByName = digByName,
+    digLine = digLine,
+    digToXY = digToXY,
 }
