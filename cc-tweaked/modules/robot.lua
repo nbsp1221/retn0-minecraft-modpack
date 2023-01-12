@@ -59,6 +59,19 @@ local function getAllItemsSpace()
     return space
 end
 
+--- @return number
+local function getEmptySlotCount()
+    local count = 0
+
+    for i = 1, 16 do
+        if turtle.getItemCount(i) == 0 then
+            count = count + 1
+        end
+    end
+
+    return count
+end
+
 local function refuelAll()
     for i = 1, 16 do
         turtle.select(i)
@@ -228,6 +241,7 @@ end
 return {
     getAllItemsCount = getAllItemsCount,
     getAllItemsSpace = getAllItemsSpace,
+    getEmptySlotCount = getEmptySlotCount,
     refuelAll = refuelAll,
     suck = suck,
     suckAll = suckAll,
