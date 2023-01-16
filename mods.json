@@ -195,6 +195,19 @@
       }
     }
   },
+  "extrastorage": {
+    "name": "ExtraStorage",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/extrastorage",
+    "version": {
+      "1.16.5": "1.6.1"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "refined-storage": ">=1.9.16"
+      }
+    }
+  },
   "goblin-traders": {
     "name": "Goblin Traders",
     "license": "GPL-3.0",
