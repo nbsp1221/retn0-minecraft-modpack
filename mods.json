@@ -197,7 +197,7 @@
   },
   "extrastorage": {
     "name": "ExtraStorage",
-    "license": "MIT",
+    "license": "AGPL-3.0",
     "url": "https://www.curseforge.com/minecraft/mc-mods/extrastorage",
     "version": {
       "1.16.5": "1.6.1"
