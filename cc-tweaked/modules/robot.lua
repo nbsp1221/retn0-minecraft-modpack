@@ -107,6 +107,11 @@ local function dropAll(direction)
 end
 
 --- @param direction string
+local function detect(direction)
+    return _getFunction('detect', direction)()
+end
+
+--- @param direction string
 --- @param distance number | nil
 --- @return boolean
 local function go(direction, distance)
@@ -247,6 +252,7 @@ return {
     suckAll = suckAll,
     drop = drop,
     dropAll = dropAll,
+    detect = detect,
     go = go,
     goContinuously = goContinuously,
     turn = turn,
