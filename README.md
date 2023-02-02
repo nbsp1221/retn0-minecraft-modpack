@@ -15,6 +15,7 @@
 | [CC: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked) | - |
 | [Chunk Loaders](https://www.curseforge.com/minecraft/mc-mods/chunk-loaders) | - |
 | [Citadel](https://www.curseforge.com/minecraft/mc-mods/citadel) | LGPL-3.0 |
+| [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config) | LGPL-3.0 |
 | [CoFH Core](https://www.curseforge.com/minecraft/mc-mods/cofh-core) | - |
 | [Collective](https://www.curseforge.com/minecraft/mc-mods/collective) | - |
 | [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines) | MIT |

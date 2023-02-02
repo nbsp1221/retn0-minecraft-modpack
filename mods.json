@@ -121,6 +121,14 @@
       "1.16.5": "1.8.1"
     }
   },
+  "cloth-config": {
+    "name": "Cloth Config",
+    "license": "LGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/cloth-config",
+    "version": {
+      "1.16.5": "4.16.91"
+    }
+  },
   "cofh-core": {
     "name": "CoFH Core",
     "url": "https://www.curseforge.com/minecraft/mc-mods/cofh-core",
