@@ -47,6 +47,7 @@
 | [Mekanism Generators](https://www.curseforge.com/minecraft/mc-mods/mekanism-generators) | MIT |
 | [Mekanism Tools](https://www.curseforge.com/minecraft/mc-mods/mekanism-tools) | MIT |
 | [Mob Grinding Utils](https://www.curseforge.com/minecraft/mc-mods/mob-grinding-utils) | - |
+| [More Red](https://www.curseforge.com/minecraft/mc-mods/more-red) | MIT |
 | [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks) | BSD-3-Clause |
 | [Narae Chat](https://github.com/sokcuri/NaraeChat) | LGPL-3.0 |
 | [Neat](https://www.curseforge.com/minecraft/mc-mods/neat) | CC-BY-NC-SA-3.0 |

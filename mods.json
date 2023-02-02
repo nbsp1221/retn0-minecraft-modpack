@@ -420,6 +420,14 @@
       "1.16.5": "0.4.37"
     }
   },
+  "more-red": {
+    "name": "More Red",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/more-red",
+    "version": {
+      "1.16.5": "2.1.1.0"
+    }
+  },
   "mouse-tweaks": {
     "name": "Mouse Tweaks",
     "license": "BSD-3-Clause",
