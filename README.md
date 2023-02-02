@@ -70,6 +70,7 @@
 | [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks) | GPL-3.0 |
 | [spark](https://www.curseforge.com/minecraft/mc-mods/spark) | GPL-3.0 |
 | [Stack Refill](https://www.curseforge.com/minecraft/mc-mods/stack-refill) | - |
+| [Stoneholm](https://www.curseforge.com/minecraft/mc-mods/stoneholm-forge) | MIT |
 | [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | - |
 | [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) | - |
 | [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | LGPL-2.1 |

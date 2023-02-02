@@ -649,6 +649,19 @@
       }
     }
   },
+  "stoneholm": {
+    "name": "Stoneholm",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/stoneholm-forge",
+    "version": {
+      "1.16.5": "1.2"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "cloth-config": ">=4.1"
+      }
+    }
+  },
   "supermartijn642s-config-lib": {
     "name": "SuperMartijn642's Config Lib",
     "url": "https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib",
