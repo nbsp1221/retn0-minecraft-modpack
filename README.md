@@ -13,6 +13,7 @@
 | [Botania](https://www.curseforge.com/minecraft/mc-mods/botania) | - |
 | [Catalogue](https://www.curseforge.com/minecraft/mc-mods/catalogue) | LGPL-2.1 |
 | [CC: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked) | - |
+| [Chisels & Bits](https://www.curseforge.com/minecraft/mc-mods/chisels-bits) | LGPL-3.0 |
 | [Chunk Loaders](https://www.curseforge.com/minecraft/mc-mods/chunk-loaders) | - |
 | [Citadel](https://www.curseforge.com/minecraft/mc-mods/citadel) | LGPL-3.0 |
 | [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config) | LGPL-3.0 |
