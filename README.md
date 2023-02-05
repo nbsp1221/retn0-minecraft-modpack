@@ -81,6 +81,7 @@
 | [Thermal Innovation](https://www.curseforge.com/minecraft/mc-mods/thermal-innovation) | - |
 | [Thermal Locomotion](https://www.curseforge.com/minecraft/mc-mods/thermal-locomotion) | - |
 | [Tinkers' Construct](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct) | MIT |
+| [Tiny Redstone](https://www.curseforge.com/minecraft/mc-mods/tiny-redstone) | GPL-3.0 |
 | [Titanium](https://www.curseforge.com/minecraft/mc-mods/titanium) | LGPL-3.0 |
 | [Track API](https://www.curseforge.com/minecraft/mc-mods/track-api) | MIT |
 | [Universal Mod Core](https://www.curseforge.com/minecraft/mc-mods/universal-mod-core) | LGPL-2.1 |
