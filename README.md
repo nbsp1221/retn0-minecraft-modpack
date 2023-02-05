@@ -67,6 +67,7 @@
 | [RFTools Storage](https://www.curseforge.com/minecraft/mc-mods/rftools-storage) | MIT |
 | [RFTools Utility](https://www.curseforge.com/minecraft/mc-mods/rftools-utility) | MIT |
 | [Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium) | LGPL-3.0 |
+| [Selene](https://www.curseforge.com/minecraft/mc-mods/selene) | LGPL-2.1 |
 | [Shutup Experimental Settings](https://www.curseforge.com/minecraft/mc-mods/shutup-experimental-settings) | GPL-3.0 |
 | [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks) | GPL-3.0 |
 | [spark](https://www.curseforge.com/minecraft/mc-mods/spark) | GPL-3.0 |
