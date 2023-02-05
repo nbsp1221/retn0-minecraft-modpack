@@ -692,6 +692,19 @@
       "1.16.5": "1.0.19"
     }
   },
+  "supplementaries": {
+    "name": "Supplementaries",
+    "license": "LGPL-2.1",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/supplementaries",
+    "version": {
+      "1.16.5": "0.18.2"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "selene": ">=1.0"
+      }
+    }
+  },
   "the-twilight-forest": {
     "name": "The Twilight Forest",
     "license": "LGPL-2.1",

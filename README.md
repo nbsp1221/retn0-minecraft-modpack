@@ -75,6 +75,7 @@
 | [Stoneholm](https://www.curseforge.com/minecraft/mc-mods/stoneholm-forge) | MIT |
 | [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | - |
 | [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) | - |
+| [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) | LGPL-2.1 |
 | [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | LGPL-2.1 |
 | [Thermal Cultivation](https://www.curseforge.com/minecraft/mc-mods/thermal-cultivation) | - |
 | [Thermal Expansion](https://www.curseforge.com/minecraft/mc-mods/thermal-expansion) | - |
