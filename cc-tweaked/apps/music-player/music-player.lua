@@ -16,6 +16,11 @@ local keys = {209, 163, 195, 180, 46, 217, 102, 49, 224, 0, 92, 72, 227, 47, 213
 
 local playlist = {
     {
+        title = 'Astronomia 2K19',
+        artist = 'Stephan F',
+        url = 'https://github.com/nbsp1221/minecraft-settings/raw/main/cc-tweaked/apps/music-player/data/stephan-f-astronomia-2k19',
+    },
+    {
         title = 'God knows...',
         artist = 'Aya Hirano',
         url = 'https://github.com/nbsp1221/minecraft-settings/raw/main/cc-tweaked/apps/music-player/data/aya-hirano-god-knows',
