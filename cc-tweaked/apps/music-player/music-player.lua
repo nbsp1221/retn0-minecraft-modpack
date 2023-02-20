@@ -21,6 +21,11 @@ local playlist = {
         url = 'https://github.com/nbsp1221/minecraft-settings/raw/main/cc-tweaked/apps/music-player/data/stephan-f-astronomia-2k19',
     },
     {
+        title = 'Crossing Field',
+        artist = 'LiSA',
+        url = 'https://github.com/nbsp1221/minecraft-settings/raw/main/cc-tweaked/apps/music-player/data/lisa-crossing-field',
+    },
+    {
         title = 'God knows...',
         artist = 'Aya Hirano',
         url = 'https://github.com/nbsp1221/minecraft-settings/raw/main/cc-tweaked/apps/music-player/data/aya-hirano-god-knows',
