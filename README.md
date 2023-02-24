@@ -86,6 +86,7 @@
 | [Tiny Redstone](https://www.curseforge.com/minecraft/mc-mods/tiny-redstone) | GPL-3.0 |
 | [Titanium](https://www.curseforge.com/minecraft/mc-mods/titanium) | LGPL-3.0 |
 | [Track API](https://www.curseforge.com/minecraft/mc-mods/track-api) | MIT |
+| [Traffic Control + Roads](https://www.curseforge.com/minecraft/mc-mods/traffic-control-roads-mod-by-teerth) | - |
 | [Universal Mod Core](https://www.curseforge.com/minecraft/mc-mods/universal-mod-core) | LGPL-2.1 |
 | [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet) | MIT |
 | [XNet Gases](https://www.curseforge.com/minecraft/mc-mods/xnet-gases) | MIT |

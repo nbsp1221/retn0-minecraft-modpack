@@ -814,6 +814,13 @@
       "1.16.5": "1.2.1"
     }
   },
+  "traffic-control-plus-roads": {
+    "name": "Traffic Control + Roads",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/traffic-control-roads-mod-by-teerth",
+    "version": {
+      "1.16.5": "3.0.0"
+    }
+  },
   "universal-mod-core": {
     "name": "Universal Mod Core",
     "license": "LGPL-2.1",
