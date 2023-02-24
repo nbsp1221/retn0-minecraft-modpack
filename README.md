@@ -21,6 +21,7 @@
 | [Collective](https://www.curseforge.com/minecraft/mc-mods/collective) | - |
 | [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines) | MIT |
 | [Configured](https://www.curseforge.com/minecraft/mc-mods/configured) | GPL-3.0 |
+| [ConnectedTexturesMod](https://www.curseforge.com/minecraft/mc-mods/ctm) | GPL-3.0 |
 | [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling) | MIT |
 | [Corail Tombstone](https://www.curseforge.com/minecraft/mc-mods/corail-tombstone) | - |
 | [Cucumber Library](https://www.curseforge.com/minecraft/mc-mods/cucumber) | MIT |

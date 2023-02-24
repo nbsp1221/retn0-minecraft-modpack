@@ -151,6 +151,14 @@
       "1.16.5": "5.39"
     }
   },
+  "connectedtexturesmod": {
+    "name": "ConnectedTexturesMod",
+    "license": "GPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ctm",
+    "version": {
+      "1.16.5": "1.1.2.6"
+    }
+  },
   "compact-machines": {
     "name": "Compact Machines",
     "license": "MIT",
