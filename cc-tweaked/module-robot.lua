@@ -56,20 +56,19 @@ end
 
 --- @param distance number | nil
 --- @param destroyObstacle boolean | nil
+--- @return boolean
 function Robot:goFront(distance, destroyObstacle)
     distance = distance or 1
     destroyObstacle = destroyObstacle or false
 
     for i = 1, distance do
-        while turtle.detect() do
+        while not turtle.forward() do
             if destroyObstacle then
                 turtle.dig()
             else
                 return false
             end
         end
-
-        turtle.forward()
 
         if self.facing == 0 then
             self.y = self.y + 1
@@ -87,12 +86,49 @@ end
 
 --- @param distance number | nil
 --- @param destroyObstacle boolean | nil
+--- @return boolean
+function Robot:goBack(distance, destroyObstacle)
+    distance = distance or 1
+    destroyObstacle = destroyObstacle or false
+
+    for i = 1, distance do
+        while not turtle.back() do
+            if destroyObstacle then
+                self:turnBack()
+
+                while turtle.detect() do
+                    turtle.dig()
+                end
+
+                self:turnBack()
+            else
+                return false
+            end
+        end
+
+        if self.facing == 0 then
+            self.y = self.y - 1
+        elseif self.facing == 1 then
+            self.x = self.x - 1
+        elseif self.facing == 2 then
+            self.y = self.y + 1
+        elseif self.facing == 3 then
+            self.x = self.x + 1
+        end
+    end
+
+    return true
+end
+
+--- @param distance number | nil
+--- @param destroyObstacle boolean | nil
+--- @return boolean
 function Robot:goUp(distance, destroyObstacle)
     distance = distance or 1
     destroyObstacle = destroyObstacle or false
 
     for i = 1, distance do
-        while turtle.detectUp() do
+        while not turtle.up() do
             if destroyObstacle then
                 turtle.digUp()
             else
@@ -100,7 +136,6 @@ function Robot:goUp(distance, destroyObstacle)
             end
         end
 
-        turtle.up()
         self.z = self.z + 1
     end
 
@@ -109,12 +144,13 @@ end
 
 --- @param distance number | nil
 --- @param destroyObstacle boolean | nil
+--- @return boolean
 function Robot:goDown(distance, destroyObstacle)
     distance = distance or 1
     destroyObstacle = destroyObstacle or false
 
     for i = 1, distance do
-        while turtle.detectDown() do
+        while not turtle.down() do
             if destroyObstacle then
                 turtle.digDown()
             else
@@ -122,7 +158,6 @@ function Robot:goDown(distance, destroyObstacle)
             end
         end
 
-        turtle.down()
         self.z = self.z - 1
     end
 
@@ -134,6 +169,7 @@ end
 --- @param z number
 --- @param facing number | nil
 --- @param destroyObstacle boolean | nil
+--- @return boolean
 function Robot:goToXYZ(x, y, z, facing, destroyObstacle)
     local dx = x - self.x
     local dy = y - self.y
@@ -193,9 +229,7 @@ function Robot:digToXYZ(x, y, z)
     for currentX = minX, maxX do
         for currentY = minY, maxY do
             for currentZ = minZ, maxZ do
-                if not self:goToXYZ(currentX, currentY, currentZ, nil, true) then
-                    return false
-                end
+                self:goToXYZ(currentX, currentY, currentZ, nil, true)
             end
         end
     end
@@ -232,6 +266,96 @@ function Robot:digCuboidFace(x, y, z)
     -- bottom
     self:goToXYZ(maxX, maxY, minZ, nil, true)
     self:digToXYZ(minX, minY, minZ)
+end
+
+--- @param name string | nil
+function Robot:placeFront(name)
+    for i = 1, 16 do
+        local item = turtle.getItemDetail(i)
+
+        if item and (not name or name == item.name) then
+            turtle.select(i)
+            turtle.place()
+
+            return
+        end
+    end
+
+    error('no items to place')
+end
+
+--- @param name string | nil
+function Robot:placeUp(name)
+    for i = 1, 16 do
+        local item = turtle.getItemDetail(i)
+
+        if item and (not name or name == item.name) then
+            turtle.select(i)
+            turtle.placeUp()
+
+            return
+        end
+    end
+
+    error('no items to place')
+end
+
+--- @param name string | nil
+function Robot:placeDown(name)
+    for i = 1, 16 do
+        local item = turtle.getItemDetail(i)
+
+        if item and (not name or name == item.name) then
+            turtle.select(i)
+            turtle.placeDown()
+
+            return
+        end
+    end
+
+    error('no items to place')
+end
+
+--- @param x number
+--- @param y number
+--- @param z number
+--- @param name string | nil
+function Robot:fillToXYZ(x, y, z, name)
+    local minX, maxX = math.min(x, self.x), math.max(x, self.x)
+    local minY, maxY = math.min(y, self.y), math.max(y, self.y)
+    local minZ, maxZ = math.min(z, self.z), math.max(z, self.z)
+
+    for currentX = minX, maxX do
+        for currentY = minY, maxY do
+            for currentZ = minZ + 1, maxZ do
+                self:goToXYZ(currentX, currentY, currentZ, nil, true)
+
+                while turtle.detectDown() do
+                    turtle.digDown()
+                end
+
+                self:placeDown()
+            end
+        end
+    end
+
+    self:goToXYZ(maxX, maxY, maxZ, 0, true)
+
+    for currentX = maxX - 1, minX - 1, -1 do
+        for i = 1, maxY - minY do
+            self:goBack(1, true)
+            self:placeFront(name)
+        end
+
+        if currentX >= minX then
+            self:goToXYZ(currentX, minY, maxZ, 1, true)
+            self:placeFront(name)
+            self:goToXYZ(currentX, maxY, maxZ, 0, true)
+        end
+    end
+
+    self:goUp(1, true)
+    self:placeDown(name)
 end
 
 return Robot
