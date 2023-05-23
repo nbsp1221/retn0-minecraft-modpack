@@ -24,6 +24,7 @@
 | [ConnectedTexturesMod](https://www.curseforge.com/minecraft/mc-mods/ctm) | GPL-3.0 |
 | [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling) | MIT |
 | [Corail Tombstone](https://www.curseforge.com/minecraft/mc-mods/corail-tombstone) | - |
+| [CraftTweaker](https://www.curseforge.com/minecraft/mc-mods/crafttweaker) | MIT |
 | [Cucumber Library](https://www.curseforge.com/minecraft/mc-mods/cucumber) | MIT |
 | [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios) | LGPL-3.0 |
 | [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | LGPL-2.1 |

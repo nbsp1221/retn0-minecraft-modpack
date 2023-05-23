@@ -190,6 +190,14 @@
       "1.16.5": "6.8.6"
     }
   },
+  "crafttweaker": {
+    "name": "CraftTweaker",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/crafttweaker",
+    "version": {
+      "1.16.5": "7.1.2.520"
+    }
+  },
   "cucumber-library": {
     "name": "Cucumber Library",
     "license": "MIT",
