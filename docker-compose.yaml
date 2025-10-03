@@ -16,7 +16,7 @@ services:
       CF_API_KEY: ${CF_API_KEY}
       CF_MODPACK_ZIP: /modpack.zip
       CF_SLUG: custom
-      CF_FORCE_INCLUDE_MODS: 248787
+      CF_FORCE_INCLUDE_MODS: 248787,499826,520110
       CF_EXCLUDE_MODS: 657742
     volumes:
       - ./data:/data
