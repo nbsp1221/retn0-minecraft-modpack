@@ -20,7 +20,7 @@ CurseForge modpack for Minecraft 1.20.1 (Forge 47.4.0) with a technology progres
 - KubeJS scripts must gate AE2 recipes behind Mekanism resources
 - Polymorph + addons (Polymorphic Energistics, Refined Polymorphism) prevent recipe conflicts
 
-**Magic Mods**: Ars Nouveau and Occultism were intentionally removed to maintain tech focus. If config files for these appear, delete them.
+**Magic Mods**: Ars Nouveau was excluded to keep the tech focus tight, but Occultism stays for dimensional storage and automation hooks. Keep its configs, and only purge stray Ars Nouveau files if they reappear.
 
 ## Development Commands
 
