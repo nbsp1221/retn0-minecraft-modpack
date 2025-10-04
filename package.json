@@ -1,0 +1,10 @@
+{
+  "name": "retn0-minecraft-modpack",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@retn0/eslint-config": "1.1.0",
+    "eslint": "9.33.0"
+  },
+  "packageManager": "bun@1.2.17"
+}
