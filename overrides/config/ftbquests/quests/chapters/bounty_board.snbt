@@ -1,0 +1,1140 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bounty_board"
+	group: ""
+	icon: "minecraft:zombie_head"
+	id: "469F9E96108E04E0"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["이곳에서 적을 처치하여 얻을 수 있는 모든 보상을 받을 수 있습니다."]
+			id: "0D2B517A19E5A20E"
+			rewards: [{
+				id: "02445EBC5BA633FA"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			subtitle: "무언가를 죽이는 것"
+			tasks: [{
+				advancement: "minecraft:adventure/kill_a_mob"
+				criterion: ""
+				id: "5B9F00E056CA5A15"
+				type: "advancement"
+			}]
+			title: "현상금 사냥꾼"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "6355682A8F0A707D"
+			rewards: [
+				{
+					count: 5
+					id: "4E81298C4BA583F6"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "4D26866545ACDB17"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "463D3167FB9606D8"
+				type: "kill"
+				value: 10L
+			}]
+			title: "오버월드 현상금: 좀비"
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6355682A8F0A707D"]
+			id: "5544999706D44C2D"
+			rewards: [
+				{
+					count: 10
+					id: "33796653D8D7493E"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "4CDCAEB6C0188679"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "583EE38B73F9DF63"
+				type: "kill"
+				value: 50L
+			}]
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5544999706D44C2D"]
+			id: "76F2724EDC726FE3"
+			rewards: [
+				{
+					count: 20
+					id: "77E035A38F0EB8F1"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "301FEDB33B7ED62D"
+					item: "minecraft:iron_ingot"
+					random_bonus: 5
+					type: "item"
+				}
+				{
+					id: "6A3BAD5DE3B59BEE"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "17F198AC90DB2432"
+				type: "kill"
+				value: 100L
+			}]
+			x: -7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["76F2724EDC726FE3"]
+			id: "2CD516F4E70F3780"
+			rewards: [
+				{
+					count: 50
+					id: "4850A4896142B868"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "7C0F7D9F84827DB9"
+					item: "minecraft:iron_ingot"
+					random_bonus: 10
+					type: "item"
+				}
+				{
+					id: "77120068F361D51A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "5E35097D6D4A8420"
+				type: "kill"
+				value: 500L
+			}]
+			x: -7.0d
+			y: -6.75d
+		}
+		{
+			id: "239A3006E0D36D12"
+			rewards: [
+				{
+					count: 5
+					id: "5D1F56B6F22FB5A9"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "1EAB7D5BB3D1F4F3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "37049475FD8222B1"
+				type: "kill"
+				value: 10L
+			}]
+			title: "오버월드 현상금: 스켈레톤"
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["239A3006E0D36D12"]
+			id: "26188E7D5A506040"
+			rewards: [
+				{
+					count: 10
+					id: "546ED2F97162FCAB"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "781065F10179EBFA"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "26FCC612915F0D57"
+				type: "kill"
+				value: 50L
+			}]
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["26188E7D5A506040"]
+			id: "21A2610D156DC31D"
+			rewards: [
+				{
+					count: 20
+					id: "506FE83D75D2CB18"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "491410968663CBED"
+					item: "minecraft:arrow"
+					random_bonus: 10
+					type: "item"
+				}
+				{
+					id: "4BD73681B43FE4DF"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "570235B502A652E5"
+				type: "kill"
+				value: 100L
+			}]
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["21A2610D156DC31D"]
+			id: "475881619AF8BC7D"
+			rewards: [
+				{
+					count: 50
+					id: "1DC4EA4DF67007D6"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "5DC8826960098BB5"
+					item: "minecraft:arrow"
+					random_bonus: 30
+					type: "item"
+				}
+				{
+					id: "7D32512C2A4052E1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "6CAB4C03E68C0545"
+				type: "kill"
+				value: 500L
+			}]
+			x: -5.050000000000001d
+			y: -6.749999999999998d
+		}
+		{
+			id: "1CEFC0434B1C836D"
+			rewards: [
+				{
+					count: 5
+					id: "650FDB28F2724189"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					id: "4830D107FFC2DD88"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "18C0B4C79ADFEC63"
+				type: "kill"
+				value: 10L
+			}]
+			title: "오버월드 현상금: 크리퍼"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1CEFC0434B1C836D"]
+			id: "2FC1F6AA45FA46DA"
+			rewards: [
+				{
+					count: 10
+					id: "0E9954615DB6302C"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					id: "541837258060C1F1"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "66CE272F35D17640"
+				type: "kill"
+				value: 50L
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2FC1F6AA45FA46DA"]
+			id: "1444D16B689394F9"
+			rewards: [
+				{
+					count: 20
+					id: "587B1F841903CBD1"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "2A9BB2E7E3A7F587"
+					item: "minecraft:tnt"
+					random_bonus: 5
+					type: "item"
+				}
+				{
+					id: "6A1D1E35C8C8298B"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "27EE437532E5A566"
+				type: "kill"
+				value: 100L
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1444D16B689394F9"]
+			id: "2D713A2534A3ECDB"
+			rewards: [
+				{
+					count: 50
+					id: "48C935436CAE0AE2"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "352586E3F3F2EC1F"
+					item: "minecraft:tnt"
+					random_bonus: 10
+					type: "item"
+				}
+				{
+					id: "1093EDDD70A9B94E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "474C8A979625F6DC"
+				type: "kill"
+				value: 500L
+			}]
+			x: -3.05d
+			y: -6.75d
+		}
+		{
+			id: "06A74093F0ADE066"
+			rewards: [
+				{
+					count: 5
+					id: "023E3683C8D849FC"
+					item: "minecraft:spider_eye"
+					type: "item"
+				}
+				{
+					id: "5F6EFD61A5FB17BF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "341B02489383E6FC"
+				title: "오버월드 현상금: 거미"
+				type: "kill"
+				value: 10L
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["06A74093F0ADE066"]
+			id: "27B3EF6FA21AE679"
+			rewards: [
+				{
+					count: 10
+					id: "7BF207E284127AE6"
+					item: "minecraft:spider_eye"
+					type: "item"
+				}
+				{
+					id: "58CDA742E5CB4B85"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "244C7E3D55152C98"
+				type: "kill"
+				value: 50L
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["27B3EF6FA21AE679"]
+			id: "71DA61D8E10F8898"
+			rewards: [
+				{
+					count: 20
+					id: "30CB00EF669C9E31"
+					item: "minecraft:spider_eye"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "5C19F86CBC95A542"
+					item: "minecraft:string"
+					random_bonus: 10
+					type: "item"
+				}
+				{
+					id: "54AF5BBA3408AB42"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "5E63B8D932169B8E"
+				type: "kill"
+				value: 100L
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["71DA61D8E10F8898"]
+			id: "137A21015CF2905F"
+			rewards: [
+				{
+					count: 50
+					id: "033513046560AD4F"
+					item: "minecraft:spider_eye"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "74F8D5114CBB7A69"
+					item: "minecraft:string"
+					random_bonus: 30
+					type: "item"
+				}
+				{
+					id: "79C3ABD44E199B7F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "2E6999A41616C951"
+				type: "kill"
+				value: 500L
+			}]
+			x: -1.0d
+			y: -6.75d
+		}
+		{
+			id: "4C6B8F1347BC4FA9"
+			rewards: [
+				{
+					count: 5
+					id: "614549839AE7D934"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "140743ABBA5E25E2"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				entity: "minecraft:witch"
+				id: "29B7EC8418C11FF0"
+				type: "kill"
+				value: 10L
+			}]
+			title: "오버월드 현상금: 마녀"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4C6B8F1347BC4FA9"]
+			id: "397458A79EE5CDA5"
+			rewards: [
+				{
+					count: 10
+					id: "38FA976BB25EB70B"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "66BDE9899090D381"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				entity: "minecraft:witch"
+				id: "7570F605FB11DD87"
+				type: "kill"
+				value: 50L
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["397458A79EE5CDA5"]
+			id: "66A5A4F5B1578061"
+			rewards: [
+				{
+					count: 10
+					id: "73F07F98136F4D50"
+					item: "minecraft:redstone"
+					random_bonus: 10
+					type: "item"
+				}
+				{
+					count: 10
+					id: "7710ED3A4C5FBD76"
+					item: "minecraft:sugar"
+					random_bonus: 10
+					type: "item"
+				}
+				{
+					count: 10
+					id: "0CF71C615C1834AF"
+					item: "minecraft:glowstone_dust"
+					random_bonus: 10
+					type: "item"
+				}
+				{
+					id: "530F47678F5F32E0"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				entity: "minecraft:witch"
+				id: "5D6B1D0FF5169979"
+				type: "kill"
+				value: 100L
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["66A5A4F5B1578061"]
+			id: "7D50B72FEB72668D"
+			rewards: [
+				{
+					count: 20
+					id: "6257AE391D2D9B66"
+					item: "minecraft:redstone"
+					random_bonus: 30
+					type: "item"
+				}
+				{
+					count: 20
+					id: "275322EF711A991D"
+					item: "minecraft:sugar"
+					random_bonus: 30
+					type: "item"
+				}
+				{
+					count: 20
+					id: "180B23A334A5CD7A"
+					item: "minecraft:glowstone_dust"
+					random_bonus: 30
+					type: "item"
+				}
+				{
+					id: "2B0C9480296DFB4E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:witch"
+				id: "3A5334B9EFD9B537"
+				type: "kill"
+				value: 500L
+			}]
+			x: 1.0d
+			y: -6.75d
+		}
+		{
+			id: "36634C3EBB49BFA5"
+			rewards: [
+				{
+					count: 5
+					id: "2A8CF4BFD8A9658B"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "2D6104B771BB7099"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				entity: "minecraft:blaze"
+				id: "7BAAB9B058DFB909"
+				type: "kill"
+				value: 10L
+			}]
+			title: "네더 현상금: 블레이즈"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["36634C3EBB49BFA5"]
+			id: "764617DC9F431E95"
+			rewards: [
+				{
+					count: 10
+					id: "67070F8274D19FB5"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "6D089682CD3832E4"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				entity: "minecraft:blaze"
+				id: "298478D39B86730A"
+				type: "kill"
+				value: 50L
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["764617DC9F431E95"]
+			id: "18EA489AB0ADE3BA"
+			rewards: [
+				{
+					count: 20
+					id: "756810931837E5DA"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4007CCE1DBA1C596"
+					item: "minecraft:blaze_rod"
+					random_bonus: 5
+					type: "item"
+				}
+				{
+					id: "19226131C71ACD14"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				entity: "minecraft:blaze"
+				id: "4416515C8E75DAA4"
+				type: "kill"
+				value: 100L
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["18EA489AB0ADE3BA"]
+			id: "7610D0DCF2D92800"
+			rewards: [
+				{
+					count: 50
+					id: "4CFE0B96290F3F29"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "2FEC62F6AE957EA6"
+					item: "minecraft:blaze_rod"
+					random_bonus: 10
+					type: "item"
+				}
+				{
+					id: "23E16652A4B5056A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:blaze"
+				id: "52DD31CF306A53A0"
+				type: "kill"
+				value: 500L
+			}]
+			x: 3.0d
+			y: -6.75d
+		}
+		{
+			id: "5045A249B059ADF0"
+			rewards: [
+				{
+					count: 5
+					id: "6F51C2185F03011C"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "3014D6BA0CAA81CF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				id: "73D8F67F4FD58307"
+				type: "kill"
+				value: 10L
+			}]
+			title: "네더 현상금: 위더 스켈레톤"
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5045A249B059ADF0"]
+			id: "5ECF9FEEF8DDF425"
+			rewards: [
+				{
+					count: 10
+					id: "7B799259FC0CB905"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "44DDE1B4BF104389"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				id: "59C92D73403A2BB2"
+				type: "kill"
+				value: 50L
+			}]
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5ECF9FEEF8DDF425"]
+			id: "494ABC13D5D48974"
+			rewards: [
+				{
+					count: 20
+					id: "7CA6174FC25EE21E"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "233382C674385731"
+					item: "minecraft:wither_skeleton_skull"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "20E399CA53C5D53D"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				id: "734D056076EBA314"
+				type: "kill"
+				value: 100L
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["494ABC13D5D48974"]
+			id: "2C5177D977AB90C2"
+			rewards: [
+				{
+					count: 50
+					id: "0457B7E4B08544B5"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1C723EABF997138D"
+					item: "minecraft:wither_skeleton_skull"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "1D255360C2F3B978"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				id: "2D12825D24AEA433"
+				type: "kill"
+				value: 500L
+			}]
+			x: 5.0d
+			y: -6.75d
+		}
+		{
+			id: "254F77D8A835A3F5"
+			rewards: [
+				{
+					count: 5
+					id: "6B2C0B96D5E3B02A"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "5F4D0B5B89357DA1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "2CA1BC23644190B6"
+				type: "kill"
+				value: 10L
+			}]
+			title: "엔드 현상금: 엔더맨"
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["254F77D8A835A3F5"]
+			id: "642D205475339AEF"
+			rewards: [
+				{
+					count: 10
+					id: "74BCC59C9323060A"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "3C71C349A1655DD4"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "0EDFF0D3F1BA51B3"
+				type: "kill"
+				value: 50L
+			}]
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["642D205475339AEF"]
+			id: "4F7C4C6074AF82EC"
+			rewards: [
+				{
+					count: 20
+					id: "2B81A704BA168C68"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "5B27C06833BEC58A"
+					item: "minecraft:ender_eye"
+					random_bonus: 5
+					type: "item"
+				}
+				{
+					id: "22FE77B1A901B26B"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "6F9D85EC344C408F"
+				type: "kill"
+				value: 100L
+			}]
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4F7C4C6074AF82EC"]
+			id: "0D645AA224F183FF"
+			rewards: [
+				{
+					count: 50
+					id: "6954D28112592BC1"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "41670C13859C827A"
+					item: "minecraft:ender_eye"
+					random_bonus: 10
+					type: "item"
+				}
+				{
+					id: "77FF4BF9B881B131"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "3505A76605B7DFC4"
+				type: "kill"
+				value: 500L
+			}]
+			x: 7.0d
+			y: -6.75d
+		}
+		{
+			id: "28F6B2FA8ADA916A"
+			rewards: [
+				{
+					count: 16
+					id: "7A8B9C1D2E3F4A5B"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "6C7D8E9F0A1B2C3D"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "090C289B5B3B6D42"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "4DDDDA28CC6FB441"
+				type: "kill"
+				value: 1L
+			}]
+			title: "위더를 처치하세요"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			id: "2820D8343E4AC706"
+			rewards: [
+				{
+					count: 16
+					id: "1F2E3D4C5B6A7899"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+				{
+					id: "2A1434AFFB2D17CB"
+					item: "minecraft:dragon_head"
+					type: "item"
+				}
+				{
+					id: "2FD5C60320001F66"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "6D3FFA2FE6468BFB"
+				type: "kill"
+				value: 1L
+			}]
+			title: "엔더 드래곤을 처치하세요"
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			id: "324633C21A5A15F0"
+			rewards: [
+				{
+					count: 8
+					id: "3C99E71DB58FFF8C"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "081DBDA1F8B8F11E"
+					item: "minecraft:sculk_catalyst"
+					type: "item"
+				}
+				{
+					id: "4BC17794C9EB4D59"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "6D9DB66A326B0D40"
+				type: "kill"
+				value: 1L
+			}]
+			title: "워든을 처치하세요"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			id: "737811566531AC81"
+			rewards: [
+				{
+					count: 16
+					id: "59B3F15ECCA4BB66"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "386DD72898BBAF96"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+				{
+					id: "5F48329C7D273CCE"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:ravager"
+				id: "1FBDE2F743532D31"
+				type: "kill"
+				value: 1L
+			}]
+			title: "파괴수를 처치하세요"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			id: "70814AD12E37AB8E"
+			rewards: [
+				{
+					count: 16
+					id: "683C5E592F4CC373"
+					item: "minecraft:sponge"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "50208129E22A986E"
+					item: "minecraft:prismarine_crystals"
+					type: "item"
+				}
+				{
+					id: "66743E5DCD86FEB4"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:elder_guardian"
+				id: "03F63960F193774A"
+				type: "kill"
+				value: 1L
+			}]
+			title: "엘더 가디언을 처치하세요"
+			x: 3.0d
+			y: 2.5d
+		}
+	]
+	title: "현상금 사냥꾼"
+}
