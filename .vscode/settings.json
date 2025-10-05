@@ -1,4 +1,8 @@
 {
+  "cSpell.words": [
+    "Modpack",
+    "retn"
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
   },
