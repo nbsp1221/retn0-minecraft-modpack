@@ -1,0 +1,1956 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "twilight_forest"
+	group: "32910AFC83FE47A7"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "442CDB2DBAAD268E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["황혼의 숲으로 이동하기 위해서는 땅에 2x2 구멍을 만들고 물로 채우세요. 구멍의 가장자리를 꽃으로 둘러싸고 다이아몬드를 물에 던지면 포털이 열립니다."]
+			id: "3C0F6004A66291EC"
+			rewards: [{
+				id: "5068F3F01BD7D153"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				advancement: "twilightforest:root"
+				criterion: ""
+				id: "03E53EDF88808D83"
+				type: "advancement"
+			}]
+			title: "황혼의 숲 입장"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["황혼의 숲에는 발견해야 할 새로운 생명체가 많이 있습니다. 황혼의 숲의 몹을 하나 처치해 보세요."]
+			id: "13FB467DA5CDDF84"
+			rewards: [{
+				id: "4605042580CC93AF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				advancement: "twilightforest:twilight_hunter"
+				criterion: ""
+				id: "78F58F10064C299A"
+				type: "advancement"
+			}]
+			title: "고요를 깨는 첫 사냥"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["13FB467DA5CDDF84"]
+			description: ["황혼의 숲 탐험을 위해 마법의 지도를 만들 재료를 모으세요. 까마귀를 처치해 까마귀 깃털을, 동굴에서 토치베리를, 중공 언덕이나 네더에서 발광석 가루를 수집하세요."]
+			id: "2693B66E0C0F7B73"
+			rewards: [{
+				id: "60F6A332E7245301"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "7D448B6B5D7836A0"
+					item: "twilightforest:raven_feather"
+					type: "item"
+				}
+				{
+					id: "2B8F75377219A8FF"
+					item: "twilightforest:torchberries"
+					type: "item"
+				}
+				{
+					id: "250842670D617029"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+			]
+			title: "마법의 지도 준비하기"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2693B66E0C0F7B73"]
+			description: ["까마귀 깃털, 토치베리, 발광석 가루를 조합해 마법의 지도 깃털을 만드세요. 이후 마법의 지도 깃털과 종이 8개를 조합하면 빈 마법의 지도가 완성됩니다."]
+			id: "357B778B97E902A6"
+			rewards: [{
+				id: "2B7B7608AF8AFDDA"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "15D5C4179A4166F3"
+				item: "twilightforest:magic_map_focus"
+				type: "item"
+			}]
+			title: "마법의 지도 깃털 제작"
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["357B778B97E902A6"]
+			description: ["빈 마법의 지도를 손에 들고 우클릭하면 주변 지형과 보스의 위치가 아이콘으로 표시됩니다."]
+			id: "31913A1A03143B53"
+			rewards: [{
+				id: "50ABCBBC28344FF7"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "34BD28AB4E5840A5"
+				item: "twilightforest:magic_map"
+				type: "item"
+			}]
+			title: "마법의 지도 활성화"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: [
+				"나가의 정원에서 거대한 뱀 형태의 첫 번째 보스 나가를 처치하세요. 마법의 지도에 표시된 나가 아이콘 위치로 이동하면 벽으로 둘러싸인 나가의 정원을 발견할 수 있습니다."
+				""
+				"나가는 빠르게 움직이며 블록을 파괴하고, 돌진 공격 시 얼굴이 흉악하게 변합니다. 체력이 1/3 이하로 줄어들면 활 공격이 효과적입니다."
+			]
+			id: "197B35A7B65FACCB"
+			rewards: [{
+				id: "387C8F393A30D3FB"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "017C0769A1B9FB9F"
+				item: "twilightforest:naga_trophy"
+				type: "item"
+			}]
+			title: "보스 1: 나가 격파"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["197B35A7B65FACCB"]
+			description: ["나가의 비늘로 나가 흉갑과 나가 레깅스를 제작하세요. 나가 흉갑은 화염 저항 3, 나가 레깅스는 보호 3 인챈트가 기본으로 부여되어 화염 늪 탐험에 유용합니다."]
+			id: "4704CA107A3956D2"
+			rewards: [{
+				id: "7F98E466F7861514"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "3C6B1B1534E1C3CF"
+					item: {
+						Count: 1
+						id: "twilightforest:naga_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:fire_protection"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3F95F5DEAD8B4637"
+					item: {
+						Count: 1
+						id: "twilightforest:naga_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "나가 방어구 제작"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["황혼의 숲에서 직접 제작할 수 있는 광물로 만드는 방어구입니다. 철과 다이아몬드 중간 성능을 가지며 내구도는 512입니다. 제작 시 레벨 1 인챈트가 자동으로 부여됩니다: 투구는 물갈퀴, 흉갑과 레깅스는 보호, 부츠는 가벼운 착지입니다."]
+			hide_dependency_lines: true
+			id: "3D24246007B50704"
+			rewards: [{
+				id: "12A2001D5D88C458"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7EFD29D7B5BACE34"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_helmet"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:aqua_affinity"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D6B09279F4A9EC8"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "55FF292292E5C3E1"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1F30C9C429C13651"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_boots"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "아이언우드 방어구"
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["197B35A7B65FACCB"]
+			description: [
+				"리치의 탑 최상층에서 강력한 마법사 보스 리치를 처치하세요. 나가를 처치하면 리치의 탑 보호막이 사라져 진입할 수 있습니다."
+				""
+				"리치는 3단계로 전투합니다. 1단계에서는 방어막에 둘러싸여 엔더 진주와 화염구를 쏩니다. 투사체를 검으로 반사하여 방어막을 제거하세요. 2단계에서는 좀비 셉터로 좀비 떼를 소환하고, 3단계에서는 황금 검을 들고 근접 전투를 합니다."
+			]
+			id: "47B421D9F80DD109"
+			rewards: [{
+				id: "5FEB192EC5D628F8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "749E7E4D0873528D"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+			title: "보스 2: 리치 격파"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["47B421D9F80DD109"]
+			description: [
+				"리치를 처치하면 낮은 확률로 획득할 수 있는 셉터입니다."
+				""
+				"적을 우클릭하여 생명력을 흡수해 하트 반 칸과 약간의 허기를 회복하며, 동일한 피해를 대상에게 줍니다."
+				""
+				"99회 사용 가능하며, 내구도가 0이 되어도 사라지지 않고 발효된 거미 눈으로 재충전할 수 있습니다."
+			]
+			id: "7856828D93F33DC0"
+			rewards: [
+				{
+					count: 2
+					id: "089B5135973FF774"
+					item: "minecraft:fermented_spider_eye"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "7B1EB077DDF0031F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			subtitle: "생명력을 흡수합니다"
+			tasks: [{
+				id: "16B0F5E14A0ADA3C"
+				item: {
+					Count: 1
+					id: "twilightforest:lifedrain_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&c생명의 셉터"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["47B421D9F80DD109"]
+			description: [
+				"리치를 처치하면 낮은 확률로 획득할 수 있는 셉터입니다."
+				""
+				"우클릭 시 6의 피해를 주는 엔더 진주 모양 투사체를 발사하며, 적의 방어력을 무시합니다. 히드라 전투에서 특히 효과적입니다."
+				""
+				"99회 사용 가능하며, 내구도가 0이 되어도 사라지지 않고 엔더 진주로 재충전할 수 있습니다."
+			]
+			id: "1BAAD3796D6BFDC0"
+			rewards: [
+				{
+					count: 2
+					id: "02CB93EE915A3330"
+					item: "minecraft:ender_pearl"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "5D42A39A7280DE06"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			subtitle: "엔더 진주 모양 투사체를 발사합니다"
+			tasks: [{
+				id: "721373BF42C026FF"
+				item: {
+					Count: 1
+					id: "twilightforest:twilight_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&9황혼의 셉터"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["47B421D9F80DD109"]
+			description: [
+				"리치를 처치하면 낮은 확률로 획득할 수 있는 셉터입니다."
+				""
+				"우클릭 시 리치의 방어막과 유사한 5개의 방패를 생성하여 플레이어를 보호합니다."
+				""
+				"9회 사용 가능하며, 내구도가 0이 되어도 사라지지 않고 황금 사과로 재충전할 수 있습니다."
+			]
+			id: "2EBB164C4BC7E537"
+			rewards: [
+				{
+					count: 2
+					id: "4F2AE0D8159AA691"
+					item: "minecraft:golden_apple"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "64431427E9C1986F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			subtitle: "방패를 생성합니다"
+			tasks: [{
+				id: "2D32FBC1E5869508"
+				item: {
+					Count: 1
+					id: "twilightforest:fortification_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&6무장의 셉터"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["47B421D9F80DD109"]
+			description: [
+				"리치를 처치하면 낮은 확률로 획득할 수 있는 셉터입니다."
+				""
+				"우클릭 시 체력 40, 공격력 7을 가진 충성스러운 좀비를 소환합니다. 소환된 좀비는 플레이어를 따라다니며 적대적인 몬스터와 싸우지만, 크리퍼는 공격하지 않습니다."
+				""
+				"9회 사용 가능하며, 내구도가 0이 되어도 사라지지 않고 썩은 살점과 힘의 포션으로 재충전할 수 있습니다."
+			]
+			id: "38734916260AB554"
+			rewards: [
+				{
+					count: 2
+					id: "26B232CBB4C6C29C"
+					item: "minecraft:rotten_flesh"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					id: "1498BD6D3A75312B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			subtitle: "좀비를 소환합니다"
+			tasks: [{
+				id: "21A9F2000D0743FA"
+				item: {
+					Count: 1
+					id: "twilightforest:zombie_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&2불사의 셉터"
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["47B421D9F80DD109"]
+			description: [
+				"미로 지도 깃털(Maze Map Focus)과 종이 8개를 조합하여 빈 미로 지도를 만드세요. 미로 지도 깃털은 미로 상자나 미노타우로스 처치 시 낮은 확률로 획득할 수 있습니다."
+				""
+				"빈 미로 지도를 우클릭하면 해당 층의 미로 구조가 표시됩니다. 각 층마다 새로운 지도가 필요합니다."
+			]
+			id: "6EF0F04B0D6DECAD"
+			rewards: [{
+				id: "3892B3A76F2B8C0D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4ECE967DC0D2F815"
+				item: "twilightforest:maze_map"
+				type: "item"
+			}]
+			title: "미로 지도 제작"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6EF0F04B0D6DECAD"]
+			description: [
+				"황혼의 늪 지하에 있는 미궁 2층에서 버섯과 미노타우로스가 결합된 보스 미노쉬룸을 처치하세요. 미궁 지도를 보고 미노쉬룸의 방을 찾으세요. 균사체와 버섯으로 가득 찬 방 안에 나무 울타리로 갇혀 있습니다."
+				""
+				"미노쉬룸은 돌진 공격과 땅을 내리쳐 충격파를 발생시킵니다. 공격 전 잠깐 멈추거나 뒷다리로 일어서는 모션을 보입니다. 울타리 두 번째 줄을 파내 통로를 만들고 그 안에서 공격하면 안전하게 처치할 수 있습니다. 드롭되는 미노타우로스 스트로가노프는 화염 저항 효과를 주어 화염 늪 진입에 필수입니다."
+			]
+			id: "38317C6B875C2590"
+			rewards: [{
+				id: "6F8E8E9D9C0AE52F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "594693C4BE5D3FD1"
+				item: "twilightforest:minoshroom_trophy"
+				type: "item"
+			}]
+			title: "보스 3: 미노쉬룸 격파"
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6EF0F04B0D6DECAD"]
+			description: ["미로 상자에서 발견하거나 미로 슬라임이 드롭하는 부적입니다. 사망 시 방어구, 현재 선택한 아이템, 왼손 아이템을 보관합니다. 4개를 조합하여 2단계로 업그레이드할 수 있습니다."]
+			id: "34E89B881602A70C"
+			rewards: [{
+				id: "6C3D9E2F1A4B5E0C"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "사망 시 일부 아이템을 보관합니다"
+			tasks: [{
+				id: "74EF4C1C37BD09F3"
+				item: "twilightforest:charm_of_keeping_1"
+				type: "item"
+			}]
+			title: "보존의 부적 I"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["황혼의 숲 상자에서 발견되는 부적입니다. 인벤토리에 넣어두면 사망 시 자동으로 소모되어 4.5하트를 회복하고 재생 I 효과를 5초간 부여합니다."]
+			hide_dependency_lines: true
+			id: "394DDE32A63B1632"
+			rewards: [{
+				id: "327902DCE4B1438D"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1AE320A601538C48"
+				item: "twilightforest:charm_of_life_1"
+				type: "item"
+			}]
+			title: "생명의 부적 I"
+			x: 15.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["394DDE32A63B1632"]
+			description: ["생명의 부적 I을 4개 조합하여 만듭니다. 사망 시 전체 체력을 회복하고 30초간 재생 IV, 저항, 화염 저항 효과를 부여합니다."]
+			id: "2D3D832B3E3401C7"
+			rewards: [{
+				id: "4EECFCB8C807C744"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "17AC1574F27FCE1D"
+				item: "twilightforest:charm_of_life_2"
+				type: "item"
+			}]
+			title: "생명의 부적 II"
+			x: 15.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["34E89B881602A70C"]
+			description: ["보존의 부적 I을 4개 조합하여 만듭니다. 사망 시 방어구와 단축 바 전체를 보관합니다. 4개를 조합하여 3단계로 업그레이드할 수 있습니다."]
+			id: "5C240D16FF0D0F7E"
+			rewards: [{
+				id: "7D4E0F3A2B5C6E0D"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "diamond"
+			subtitle: "사망 시 방어구와 단축 바를 보관합니다"
+			tasks: [{
+				id: "4DE5C28D3A72BAA5"
+				item: "twilightforest:charm_of_keeping_2"
+				type: "item"
+			}]
+			title: "보존의 부적 II"
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5C240D16FF0D0F7E"]
+			description: ["보존의 부적 II를 4개 조합하여 만듭니다. 사망 시 전체 인벤토리를 보관하는 최고 단계의 부적입니다."]
+			id: "21CC3FB8C1FF85F5"
+			rewards: [{
+				id: "7B262EF919811B05"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "diamond"
+			subtitle: "사망 시 전체 인벤토리를 보관합니다"
+			tasks: [{
+				id: "7A1017BEF1250C9C"
+				item: "twilightforest:charm_of_keeping_3"
+				type: "item"
+			}]
+			title: "보존의 부적 III"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6EF0F04B0D6DECAD"]
+			description: [
+				"미로 하층부의 숨겨진 상자에서 발견할 수 있는 희귀한 곡괭이입니다."
+				""
+				"16x16 크기의 미로 블록 고체 영역 중앙에 목재 압력판과 TNT로 둘러싸인 상태로 생성됩니다. 미로 블록을 빠르게 파괴할 수 있는 유일한 도구입니다."
+				""
+				"기본적으로 효율 4, 내구성 3, 행운 2 인챈트가 부여되어 있습니다."
+			]
+			id: "47617C8F3229AB01"
+			rewards: [{
+				id: "5B2E8A9C1D3F4E0B"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			subtitle: "미로 블록을 빠르게 파괴합니다"
+			tasks: [{
+				id: "75466DC07CAD9E2D"
+				item: {
+					Count: 1
+					id: "twilightforest:mazebreaker_pickaxe"
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:efficiency"
+								lvl: 4s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:fortune"
+								lvl: 2s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "미로 파괴자 곡괭이"
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6EF0F04B0D6DECAD"]
+			description: ["미로 지도와 철 블록, 금 블록, 다이아몬드 블록을 조합하여 광석 지도를 만드세요. 광석 지도는 벽을 투시하여 위아래 층의 광석을 색깔별로 표시합니다."]
+			id: "690DBCE9AD2FF6A5"
+			optional: true
+			rewards: [{
+				id: "7A9E2C1D8F3B4E0A"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "3E25E569BEFE5600"
+				item: "twilightforest:ore_map"
+				type: "item"
+			}]
+			title: "광석 지도 제작"
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["38317C6B875C2590"]
+			description: [
+				"미노쉬룸을 처치하면 획득할 수 있는 강력한 도끼입니다."
+				""
+				"일반 공격 시 10의 피해를 주며, 달리기 공격 시 추가 7 피해가 더해져 최대 17의 피해를 줍니다."
+			]
+			id: "47214C6509C43130"
+			rewards: [{
+				id: "33FCDF32BB5A8A8F"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "달리기 공격으로 강력한 피해를 줍니다"
+			tasks: [{
+				id: "736C34B5F6533503"
+				item: {
+					Count: 1
+					id: "twilightforest:diamond_minotaur_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "미노타우로스의 도끼"
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["중형 및 대형 중공 언덕에서 획득할 수 있는 초록색 곤충입니다. 활처럼 조준하여 월충을 발사하면 착탄 지점에 달라붙어 14 밝기로 주변을 밝혀줍니다. 256 내구도를 가지며 토치베리 3개로 재충전할 수 있습니다."]
+			hide_dependency_lines: true
+			id: "3215AF929E03ACF5"
+			rewards: [{
+				id: "24434DA72F47219B"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "66631D4930F1D768"
+				item: {
+					Count: 1
+					id: "twilightforest:moonworm_queen"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "월충 여왕"
+			x: 15.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["중공 언덕 상자에서 획득할 수 있습니다. 오버월드의 특정 생물을 황혼의 숲 생물로, 또는 그 반대로 변환할 수 있습니다."]
+			hide_dependency_lines: true
+			id: "06997F6F635CC082"
+			rewards: [{
+				id: "7FFF55E41B04CDC3"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "166EE8B21051CBCE"
+				item: "twilightforest:transformation_powder"
+				type: "item"
+			}]
+			title: "변환 가루"
+			x: 16.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["황혼의 숲에서 발견할 수 있는 다양한 음식들입니다. 사슴고기, 미로 와퍼, 미프 스트로가노프, 히드라 고기, 실험체 115 등이 있습니다."]
+			hide_dependency_lines: true
+			id: "0E93AA383C3C5402"
+			optional: true
+			rewards: [{
+				id: "04C349B571AA1F0B"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "31C7F19424B16482"
+					item: "twilightforest:raw_venison"
+						type: "item"
+				}
+				{
+					id: "4F2C19150525B59B"
+					item: "twilightforest:cooked_venison"
+						type: "item"
+				}
+				{
+					id: "370103E84BB3A9EF"
+					item: "twilightforest:maze_wafer"
+						type: "item"
+				}
+				{
+					id: "11441738FEA96951"
+					item: "twilightforest:raw_meef"
+						type: "item"
+				}
+				{
+					id: "56B045D5FC8085CC"
+					item: "twilightforest:cooked_meef"
+						type: "item"
+				}
+				{
+					id: "4FFA44743CFB9FDE"
+					item: "twilightforest:meef_stroganoff"
+						type: "item"
+				}
+				{
+					id: "364EDDDBBA0C7A8A"
+					item: "twilightforest:hydra_chop"
+						type: "item"
+				}
+				{
+					id: "72809EE87B487688"
+					item: "twilightforest:experiment_115"
+						type: "item"
+				}
+				{
+					advancement: "twilightforest:twilight_dinner"
+					criterion: ""
+					id: "6D5AFF9FEA49D4A7"
+						type: "advancement"
+				}
+			]
+			title: "황혼의 음식"
+			x: 15.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["중공 언덕 상자에서 획득합니다. 활처럼 조준하여 땅을 향해 발사하면 지하의 광석(석탄 제외)을 지표로 끌어올립니다. 내구도는 13으로 매우 낮습니다."]
+			hide_dependency_lines: true
+			id: "7148E97E02CB2809"
+			rewards: [{
+				id: "3B915A867BEA8F08"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "692A2EAF748F12DE"
+				item: {
+					Count: 1
+					id: "twilightforest:ore_magnet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "광석 자석"
+			x: 14.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["중형 또는 대형 중공 언덕과 미궁 상자에서 발견됩니다. 사용 시 앞의 적을 밀어내며, 달리다가 점프하면서 사용하면 높이 점프할 수 있습니다. 겉날개의 로켓 대용으로도 사용 가능합니다."]
+			hide_dependency_lines: true
+			id: "602B871245243441"
+			rewards: [{
+				id: "3289834009FAE945"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "51A60EA08B72CDD2"
+				item: {
+					Count: 1
+					id: "twilightforest:peacock_feather_fan"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "공작 깃털 부채"
+			x: 14.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["38317C6B875C2590"]
+			description: [
+				"화염 늪의 히드라 둥지에서 3개의 거대한 머리를 가진 보스 히드라를 처치하세요. 히드라 둥지는 평평한 늪지에서 거대한 언덕처럼 보이며, 뒤쪽은 높고 앞쪽은 큰 절벽을 이룹니다."
+				""
+				"히드라는 처음에 3개의 머리로 시작하지만, 하나를 파괴하면 2개가 재생되어 최대 7개까지 늘어납니다. 머리가 입을 벌릴 때만 공격이 가능하며, 머리에 직접 공격하는 것이 몸통보다 효과적입니다. 화염 방사, 박격포 공격, 물어뜯기 세 가지 공격 패턴을 가지고 있습니다. 박격포는 가스트처럼 반사할 수 있어 주요 대미지 수단이 됩니다. 화염 저항 방어구를 착용하면 도움이 됩니다."
+			]
+			id: "743F9CDD786306D1"
+			rewards: [{
+				id: "570C892F3CFDF495"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2E4716BEA8CD59FA"
+				item: "twilightforest:hydra_trophy"
+				type: "item"
+			}]
+			title: "보스 4: 히드라 격파"
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["743F9CDD786306D1"]
+			description: [
+				"히드라를 처치하면 획득할 수 있는 화염석의 피와 철 주괴를 조합하여 화염석 주괴를 만드세요."
+				""
+				"화염석 주괴로 화염석 방어구를 제작할 수 있습니다. 다이아몬드와 동일한 방어력을 가지며, 공격받을 때 상대를 불태우고 화염과 용암에 타지 않습니다."
+			]
+			id: "73E8234591A06D64"
+			rewards: [{
+				id: "08650F916A18D4B3"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "공격받을 때 상대를 불태웁니다"
+			tasks: [
+				{
+					id: "6300FCA1731478AE"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2E2409051DAA8561"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59757C7D159521F2"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "216B956353E8AE15"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "화염석 방어구"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["743F9CDD786306D1"]
+			description: [
+				"화염석 주괴로 화염석 검과 화염석 곡괭이를 제작하세요."
+				""
+				"화염석 검은 8의 피해를 주며 점화 II 효과가 있습니다. 화염석 곡괭이는 캐낸 광석을 자동으로 제련합니다. 돌을 캐면 조약돌이 아닌 돌을, 철광석을 캐면 철 주괴를 바로 얻습니다."
+			]
+			id: "0826A6022681999E"
+			rewards: [{
+				id: "38F7FE87CA7F0191"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "561DEF6E02176723"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0EE30BCE04D8E0CB"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "화염석 도구와 무기"
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["743F9CDD786306D1"]
+			description: [
+				"어둠의 숲 지하에 있는 고블린 기사의 요새를 탐험하세요. 요새 상층부에서 트로피 받침대를 찾아 이전 보스의 트로피를 올리면 주변 방어막이 사라져 하층부로 내려갈 수 있습니다."
+				""
+				"요새 깊은 곳의 식당에서 여러 유령 기사들과 동시에 전투를 벌입니다. 모든 유령을 처치하면 상자가 나타나 유령 기사 트로피와 마법이 부여된 팬텀 방어구, 나이트메탈 도구를 획득할 수 있습니다. 유령 기사를 처치하면 어둠의 숲 중심부의 보호가 해제되어 어둠의 탑에 진입할 수 있습니다."
+			]
+			id: "3292A6217D815666"
+			rewards: [{
+				id: "1EFA83069B752FDC"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4DF1A44B621982CA"
+				item: "twilightforest:knight_phantom_trophy"
+				type: "item"
+			}]
+			title: "보스 5: 유령 기사 격파"
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3292A6217D815666"]
+			description: [
+				"나이트메탈 주괴로 나이트메탈 방어구를 제작하세요. 요새에서 고블린 기사, 투구게, 철퇴 고블린을 처치하면 갑옷 조각을 얻을 수 있고, 9개를 조합하여 갑옷 조각 클러스터를 만든 뒤 구우면 나이트메탈 주괴 1개가 됩니다."
+				""
+				"나이트메탈 방어구는 철 방어구보다 높은 방어력을 가지며, 방어 강도 1을 제공합니다."
+			]
+			id: "49B390FAC905821E"
+			rewards: [{
+				id: "1EF459AAFE2CB6E1"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "0BEFCAA1B0346DFA"
+					item: {
+						Count: 1
+						id: "twilightforest:knightmetal_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F9BB916F845696D"
+					item: {
+						Count: 1
+						id: "twilightforest:knightmetal_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "745DBBB12AE25726"
+					item: {
+						Count: 1
+						id: "twilightforest:knightmetal_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6650A5D81F42A9F7"
+					item: {
+						Count: 1
+						id: "twilightforest:knightmetal_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "나이트메탈 방어구"
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3292A6217D815666"]
+			description: [
+				"유령 기사를 모두 처치하면 나타나는 상자에서 마법이 부여된 팬텀 방어구를 획득할 수 있습니다."
+				""
+				"팬텀 방어구는 투구와 흉갑으로만 구성되어 있으며, 모든 방어구 세트 중 가장 높은 내구도를 가지고 있습니다. 방어 강도 2.5를 제공하며, 사망 시 잃어버리지 않는 특별한 속성이 있습니다."
+			]
+			id: "271876E1ADED3FD0"
+			rewards: [{
+				id: "3CC62E4A99AAA0B9"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "사망 시 잃어버리지 않습니다"
+			tasks: [
+				{
+					id: "240AE3E7CEE31261"
+					item: {
+						Count: 1
+						id: "twilightforest:phantom_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "171293846CD93CDD"
+					item: {
+						Count: 1
+						id: "twilightforest:phantom_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "팬텀 방어구"
+			x: 12.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3292A6217D815666"]
+			description: [
+				"유령 기사를 모두 처치하면 나타나는 상자에서 마법이 부여된 나이트메탈 도구를 획득하거나, 나이트메탈 주괴로 직접 제작할 수 있습니다."
+				""
+				"나이트메탈 검과 곡괭이는 방어구를 착용한 적에게 추가 피해를 주고, 나이트메탈 도끼는 방어구를 착용하지 않은 적에게 추가 피해를 줍니다. 블록과 사슬은 던지면 10의 피해를 주고 블록을 파괴하는 특수 무기입니다. 나이트메탈 방패는 바닐라 방패의 3배 이상인 1,024 내구도를 가집니다."
+			]
+			id: "2305A76FD31EFC31"
+			rewards: [{
+				id: "2F1E4754075B1195"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "48F6E1AEDB4E6751"
+					item: {
+						Count: 1
+						id: "twilightforest:knightmetal_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7CD1982E61A0720B"
+					item: {
+						Count: 1
+						id: "twilightforest:knightmetal_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "085CCB5B8C3F1E72"
+					item: {
+						Count: 1
+						id: "twilightforest:knightmetal_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7088E279D432996B"
+					item: {
+						Count: 1
+						id: "twilightforest:block_and_chain"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A112037DD7E849C"
+					item: {
+						Count: 1
+						id: "twilightforest:knightmetal_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "나이트메탈 도구와 무기"
+			x: 13.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3292A6217D815666"]
+			description: [
+				"어둠의 숲 중심부에 우뚝 솟은 어둠의 탑 꼭대기에서 거대한 가스트 보스 유어 가스트를 처치하세요. 유령 기사를 격파하면 어둠의 탑 보호가 해제되어 진입할 수 있습니다."
+				""
+				"유어 가스트는 처음에는 화염구를 발사하여 공격합니다. 체력이 절반 이하로 떨어지면 '탄트럼 모드'에 진입하여 화염구 공격을 멈추고 가스트 눈물을 쏟아냅니다. 눈물에 맞으면 큰 피해를 입고 방어구가 빠르게 손상되니 유어 가스트 아래로 가지 마세요. 탄트럼 모드 중에는 화염구를 쏘지 않아 공격할 절호의 기회입니다. 탑 내부의 카미나이트 가스트링을 처치하면 가스트 덫이 충전되고, 레드스톤으로 작동시키면 빨간 레이저로 유어 가스트에게 피해를 줄 수 있습니다."
+			]
+			id: "2EEC5B65BB21DB62"
+			rewards: [{
+				id: "230B46A939B9455E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6B12EE85DCFDF84E"
+				item: "twilightforest:ur_ghast_trophy"
+				type: "item"
+			}]
+			title: "보스 6: 유어 가스트 격파"
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2EEC5B65BB21DB62"]
+			description: [
+				"어둠의 탑 내부에서 발견되는 카미나이트 장치들입니다. 유어 가스트를 처치하면 얻는 카미나이트로 제작할 수 있습니다."
+				""
+				"카미나이트 반응기는 6면에 레드스톤 블록을 배치하면 활성화되어 주변 3x3 블록을 거짓 금과 거짓 다이아몬드로 변환하고, 폭발하며 5마리의 카미나이트 가스트링을 소환합니다. 카미나이트 구축기는 레드스톤 신호를 받으면 플레이어가 보는 방향으로 일정 시간 후 사라지는 블록 다리를 생성합니다."
+			]
+			id: "404C8DB667992B67"
+			rewards: [{
+				id: "272F80680155C640"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			subtitle: "레드스톤으로 활성화되는 특수 장치"
+			tasks: [
+				{
+					id: "17BF961E26489139"
+					item: "twilightforest:carminite_builder"
+					type: "item"
+				}
+				{
+					id: "6F20906659B71845"
+					item: "twilightforest:carminite_reactor"
+					type: "item"
+				}
+			]
+			title: "카미나이트 장치"
+			x: 14.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2EEC5B65BB21DB62"]
+			description: [
+				"어둠의 탑의 문과 통로 시스템에 사용되는 마법의 블록입니다. 카미나이트로 제작할 수 있습니다."
+				""
+				"점멸 블록은 우클릭하거나 레드스톤 신호를 받으면 영구적으로 사라져 공기만 남습니다. 구현 블록은 우클릭하거나 레드스톤 신호를 받으면 일시적으로 작은 블록으로 변해 통과할 수 있게 되며, 시간이 지나면 원래 크기로 돌아옵니다. 두 블록 모두 인접한 같은 종류의 블록을 연쇄적으로 활성화할 수 있습니다."
+			]
+			id: "15A44A197F5B170B"
+			rewards: [{
+				id: "68990405D4FE330E"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			subtitle: "마법의 문 시스템"
+			tasks: [
+				{
+					id: "22DAFDE009186482"
+					item: "twilightforest:reappearing_block"
+					type: "item"
+				}
+				{
+					id: "2D193711EC819E86"
+					item: "twilightforest:vanishing_block"
+					type: "item"
+				}
+			]
+			title: "점멸 블록과 구현 블록"
+			x: 15.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2EEC5B65BB21DB62"]
+			description: [
+				"눈 덮인 숲 바이옴의 예티 둥지에서 6개의 파란 뿔과 붉은 눈을 가진 거대한 보스 우두머리 예티를 처치하세요. 예티 둥지는 4개의 입구가 있는 눈 동굴로, 중심부에 우두머리 예티가 있습니다."
+				""
+				"우두머리 예티는 얼음 폭탄을 발사하여 공격하며, 착탄 지점에 지속 피해를 주는 얼어붙는 영역을 생성합니다. 플레이어가 가까이 다가오면 던져버리며, 이 단계에서는 화살 피해에 면역이므로 근접 공격만 가능합니다. 충분한 피해를 입히면 광란 모드에 진입하여 팔을 휘두르며 날뛰고 점프하여 범위 내 플레이어에게 피해를 줍니다. 처치 시 우두머리 예티 털과 얼음 폭탄을 드롭하며, 털로 예티 방어구를 제작할 수 있습니다."
+			]
+			id: "628CBA6A9E726735"
+			rewards: [{
+				id: "4378A8759D2C4F91"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "05D5E83AF75B31B3"
+				item: "twilightforest:alpha_yeti_trophy"
+				type: "item"
+			}]
+			title: "보스 7: 우두머리 예티 격파"
+			x: 17.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["628CBA6A9E726735"]
+			description: [
+				"예티와 겨울 늑대를 처치하면 획득할 수 있는 극지동물의 털로 극지 방어구를 제작하세요."
+				""
+				"극지 방어구는 철나무 방어구와 동일한 방어력을 가지지만 방어 강도가 추가되어 약간 더 우수합니다. 다이아몬드 방어구에 가까운 성능을 가지지만 내구도는 절반입니다. 여러 가지 염료로 염색할 수 있으며, 물이 담긴 가마솥에서 색을 제거할 수 있습니다."
+			]
+			id: "4F1FE5027FA49368"
+			rewards: [{
+				id: "16E1AF0820DD2763"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "염색 가능한 중급 방어구"
+			tasks: [
+				{
+					id: "30397EC41AF5377B"
+					item: {
+						Count: 1
+						id: "twilightforest:arctic_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "097CCCA3A644C52D"
+					item: {
+						Count: 1
+						id: "twilightforest:arctic_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "545564FA1E9EBC14"
+					item: {
+						Count: 1
+						id: "twilightforest:arctic_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2BEE8B707AC8C40F"
+					item: {
+						Count: 1
+						id: "twilightforest:arctic_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "극지 방어구"
+			x: 17.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["628CBA6A9E726735"]
+			description: [
+				"우두머리 예티를 처치하면 획득할 수 있는 우두머리 예티 모피로 예티 방어구를 제작하세요."
+				""
+				"예티 방어구는 모든 부위가 자동으로 보호 2 인챈트가 부여되며, 부츠는 추가로 가벼운 착지 4 인챈트가 부여됩니다. 네더라이트와 동일한 방어 강도 3을 가지며, 인챈트 레벨 15를 제공합니다. 공격받을 때 공격자에게 냉기 III 효과를 부여하여 움직임을 느리게 만듭니다."
+			]
+			id: "6984643B3BC65DB0"
+			rewards: [{
+				id: "3453053C242EA170"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "공격자를 얼려 느리게 만듭니다"
+			tasks: [
+				{
+					id: "7514091011FEA14E"
+					item: {
+						Count: 1
+						id: "twilightforest:yeti_helmet"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6984F413E9DDC022"
+					item: {
+						Count: 1
+						id: "twilightforest:yeti_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "33071593BBE284CB"
+					item: {
+						Count: 1
+						id: "twilightforest:yeti_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "594F9FC62E5CC2E9"
+					item: {
+						Count: 1
+						id: "twilightforest:yeti_boots"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:protection"
+									lvl: 2s
+								}
+								{
+									id: "minecraft:feather_falling"
+									lvl: 4s
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "예티 방어구"
+			x: 18.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["628CBA6A9E726735"]
+			description: [
+				"빙하 지대의 오로라 궁전 꼭대기에서 얼음 구름을 타고 떠다니는 최종 보스 눈의 여왕을 처치하세요. 우두머리 예티를 격파하면 오로라 궁전이 잠금 해제됩니다. 궁전의 탑 중 하나 꼭대기에서 눈의 여왕을 찾을 수 있습니다."
+				""
+				"눈의 여왕은 얼음 구름을 방패로 사용하여 아래에서의 공격을 막습니다. 1단계에서는 6개의 거대한 얼음 결정을 소환하여 플레이어를 공격하고, 이를 이용해 체력을 회복합니다. 체력이 절반 이하로 떨어지면 2단계에 진입하여 팔을 뻗고 손에서 눈을 쏩니다. 눈의 여왕은 세 가지 공격 패턴을 사용합니다: 얼음 결정 소환, 썰매를 위로 들어 올린 뒤 내리찍는 슬램 공격, 플레이어와 같은 높이로 날아와 매우 강력한 눈송이 마법을 발사하는 얼음 마법 분사입니다."
+			]
+			id: "09B36A68294CD42A"
+			rewards: [{
+				id: "48034A6F9E5055EA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5B55D14215CCCAC9"
+				item: "twilightforest:snow_queen_trophy"
+				type: "item"
+			}]
+			title: "보스 8: 눈의 여왕 격파"
+			x: 19.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["09B36A68294CD42A"]
+			description: [
+				"눈의 여왕을 처치하면 50% 확률로 획득할 수 있는 특수 활입니다."
+				""
+				"유도 활로 발사한 화살은 주변의 적을 자동으로 탐지하여 유도됩니다. 385 내구도를 가지며, 조준 보조가 필요한 상황에서 매우 유용합니다. 단, 유도 화살은 치명타 공격이 불가능하며, 플레이어를 표적으로 삼지 않습니다."
+			]
+			id: "1A9EE85C6324A5CC"
+			rewards: [{
+				id: "156014F97D867358"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "화살이 적을 자동으로 추적합니다"
+			tasks: [{
+				id: "12107BA31F5AD84B"
+				item: {
+					Count: 1
+					id: "twilightforest:seeker_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "유도 활"
+			x: 19.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["09B36A68294CD42A"]
+			description: [
+				"눈의 여왕을 처치하면 50% 확률로 획득할 수 있는 특수 활입니다. 유도 활을 획득하지 못했다면 이 활을 얻게 됩니다."
+				""
+				"삼연발 활은 한 번에 수직으로 정렬된 3개의 화살을 발사하며, 석궁의 다중 발사 인챈트와 유사합니다. 화살 1개만 소모하고 내구도도 1만 감소하지만, 3개의 화살이 모두 명중하면 일반 활의 3배 피해를 줄 수 있습니다. 근거리~중거리에서 대형 적에게 특히 효과적입니다."
+			]
+			id: "7F1D2A8CBBC954EE"
+			rewards: [{
+				id: "1AE3B665E257DA37"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "한 번에 3개의 화살을 발사합니다"
+			tasks: [{
+				id: "32E3E4005E6462D7"
+				item: {
+					Count: 1
+					id: "twilightforest:triple_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "삼연발 활"
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["오로라 궁전 상자에서 발견되는 희귀한 활입니다. 화살이 적에 맞으면 사용자와 적의 위치가 서로 바뀝니다."]
+			hide_dependency_lines: true
+			id: "7708FF03AF3F1833"
+			rewards: [{
+				id: "046A206896E299FF"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "022B8B2C2DE6DB6C"
+				item: {
+					Count: 1
+					id: "twilightforest:ender_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "엔더 활"
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["오로라 궁전 상자에서 매우 희귀하게 발견됩니다. 40의 엄청난 피해를 주지만 내구도가 1로 한 번 사용하면 산산조각 납니다. 내구성 인챈트로 여러 번 사용할 확률을 높일 수 있습니다."]
+			hide_dependency_lines: true
+			id: "43070FCE326A9E22"
+			rewards: [{
+				id: "17EDAED0FE8B27F3"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0A73BA05ECDCC7CD"
+				item: {
+					Count: 1
+					id: "twilightforest:glass_sword"
+						tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "유리 검"
+			x: 14.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["오로라 궁전 상자에서 발견되는 검입니다. 7.5의 피해를 주며, 공격한 적에게 10초간 냉기 III 효과를 부여하여 이동 속도를 느리게 만듭니다."]
+			hide_dependency_lines: true
+			id: "6C9A268ADB508E2D"
+			rewards: [{
+				id: "0DAAB74DB9B174E4"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4A088066857DBF43"
+				item: {
+					Count: 1
+					id: "twilightforest:ice_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "얼음 검"
+			x: 15.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["오로라 궁전 상자에서 발견되는 활입니다. 맞은 적은 얼음에 덮여 10초간 냉기 III 효과를 받아 이동이 느려집니다."]
+			hide_dependency_lines: true
+			id: "2F82516BE7A6A4F3"
+			rewards: [{
+				id: "3A3A347DC950602A"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4498CD68A6E97C5F"
+				item: {
+					Count: 1
+					id: "twilightforest:ice_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "얼음 활"
+			x: 16.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: ["강철잎으로 제작하는 방어구입니다. 던전 상자에서만 획득 가능합니다. 다이아몬드 급 성능을 가지지만 내구도는 131로 낮은 편입니다. 제작 시 각 부위마다 레벨 2 인챈트가 자동으로 부여됩니다: 투구는 투사체로부터 보호, 흉갑은 폭발로부터 보호, 레깅스는 화염으로부터 보호, 부츠는 가벼운 착지입니다."]
+			hide_dependency_lines: true
+			id: "10569141EAEF82E2"
+			rewards: [{
+				id: "1F1A6CB10F52FD0A"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "0577334FCE097E75"
+					item: {
+						Count: 1
+						id: "twilightforest:steeleaf_helmet"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:projectile_protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "220B19C05854B63D"
+					item: {
+						Count: 1
+						id: "twilightforest:steeleaf_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:blast_protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6C6E1636E40F2D7A"
+					item: {
+						Count: 1
+						id: "twilightforest:steeleaf_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:fire_protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A9B4DB7CF913E74"
+					item: {
+						Count: 1
+						id: "twilightforest:steeleaf_boots"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "강철잎 방어구"
+			x: 16.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["09B36A68294CD42A"]
+			description: [
+				"트롤 동굴 내부의 흑요석으로 둘러싸인 버섯 금고에서 마법의 콩을 발견할 수 있습니다. 트롤 동굴은 지도에서 종유석 아이콘으로 표시되며 땅굴 속에 숨겨져 있어 찾기 어렵습니다."
+				""
+				"Highland 바이옴을 탐험하면 비옥한 흙을 발견할 수 있습니다. 일반 흙에 검은 점이 많이 박힌 텍스처로 종종 회백토와 함께 나타납니다."
+				""
+				"비옥한 흙에 마법의 콩을 심으면 거대한 콩나무가 자라나 구름 높이까지 뻗어 하늘 위의 구름 오두막으로 가는 길을 만들어 줍니다. 주의: 콩을 심을 때 너무 가까이 서 있으면 자라나는 콩나무에 질식할 수 있습니다."
+			]
+			id: "3276ADDD8834C9DB"
+			rewards: [{
+				id: "64A4CE9A904D6772"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "6B5825CAD1F30971"
+					item: "twilightforest:magic_beans"
+					type: "item"
+				}
+				{
+					id: "114E1CC9BBADB088"
+					item: "twilightforest:uberous_soil"
+					type: "item"
+				}
+			]
+			title: "하늘로 향하는 길"
+			x: 20.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3276ADDD8834C9DB"]
+			description: [
+				"구름 오두막에는 거대한 돌 블록으로 지어진 단순한 오두막이 구름 위에 떠 있으며, 거인 광부가 서식합니다. 거인 광부를 처치하면 거인 곡괭이를 획득할 수 있습니다."
+				""
+				"거인 곡괭이는 1024 내구도를 가지며, 동일한 타입의 블록을 최대 4x4x4 크기까지 한 번에 채굴할 수 있습니다. 거대 흑요석을 파괴할 수 있는 유일한 도구입니다."
+				""
+				"트롤 동굴로 돌아가 거인 곡괭이로 거대 흑요석 금고를 열면 다음 여정에 필수적인 아이템을 얻을 수 있습니다."
+			]
+			id: "1D4CF3CA0812FDCE"
+			rewards: [{
+				id: "75D4F864C9D5E878"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "pentagon"
+			tasks: [{
+				id: "54929CEA039FA9AA"
+				item: {
+					Count: 1
+					id: "twilightforest:giant_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "거인의 도구"
+			x: 20.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1D4CF3CA0812FDCE"]
+			description: [
+				"거인 곡괭이로 트롤 동굴의 거대 흑요석 금고를 열면 재의 등불을 발견할 수 있습니다."
+				""
+				"재의 등불은 가시밭의 가시를 제거할 수 있는 유일한 도구입니다. 가시를 우클릭하면 개별 블록을 태울 수 있고, 우클릭을 길게 눌러 충전하면 주변 4x4x4 영역의 모든 가시를 한 번에 태울 수 있습니다."
+				""
+				"내구도 제한이 없어 무한히 사용할 수 있습니다. 불에 탄 가시는 회색으로 변하며 통과할 수 있게 됩니다. 재의 등불이 없으면 가시밭에 산성비가 내려 진입이 매우 어렵습니다."
+			]
+			id: "2CFF672CC1D4BB0B"
+			rewards: [{
+				id: "7DC3EDD6A683FC78"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "4A380A382C1FB64F"
+				item: {
+					Count: 1
+					id: "twilightforest:lamp_of_cinders"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "영원히 타오르는 불꽃"
+			x: 20.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2CFF672CC1D4BB0B"]
+			description: [
+				"가시밭의 가시 위에는 가시 장미가 자라나 있습니다. 재의 등불로 인접한 가시를 태우면 가시 장미가 떨어집니다."
+				""
+				"도끼로 더 빠르게 수확할 수 있으며, 나무 블록 위에 다시 심어 장식용으로 사용할 수 있습니다."
+			]
+			id: "364F4A43E9F74450"
+			rewards: [{
+				id: "345DFBCB5EA69034"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "heart"
+			tasks: [{
+				count: 12L
+				id: "19DBAA7FF18F4BE2"
+				item: { Count: 12, id: "twilightforest:thorn_rose" }
+				type: "item"
+			}]
+			title: "가시밭의 꽃"
+			x: 19.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["364F4A43E9F74450"]
+			description: [
+				"가시밭을 지나면 최종 고원에 도달하며, 그곳에는 거대한 최종 성이 우뚝 서 있습니다. 성은 하얀 성 벽돌로 지어져 있고, 다양한 색상의 룬이 새겨진 벽돌과 보호막으로 덮여 있습니다."
+				""
+				"성 문은 핑크, 노란색, 파란색, 보라색 4가지 색상이 있으며, 우클릭하면 자신과 인접한 모든 성 문이 5초 동안 열립니다. 열려 있는 동안 검은 입자가 발생합니다."
+				""
+				"핑크 문을 따라가면 메인 타워로, 파란색 문은 타워 꼭대기에서 첫 번째 미니보스로, 노란색 문은 가시로 가득한 부서진 타워로 이어집니다. 보라색 문은 최종 보스로 가는 마지막 문입니다."
+			]
+			id: "523FC08AB82B623C"
+			rewards: [{
+				id: "4DAF3790C8A75225"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [
+				{
+					count: 12L
+					id: "292EBFAA22769E9B"
+					item: { Count: 12, id: "twilightforest:pink_castle_door" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "584B6FBDA3064163"
+					item: { Count: 12, id: "twilightforest:yellow_castle_door" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "291A3FE12BB32627"
+					item: { Count: 12, id: "twilightforest:blue_castle_door" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "7B7407EC201A9E5C"
+					item: { Count: 12, id: "twilightforest:violet_castle_door" }
+					type: "item"
+				}
+			]
+			title: "최종 고원의 성문"
+			x: 17.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["523FC08AB82B623C"]
+			description: [
+				"거대한 황혼 참나무 내부의 나무 던전에서 매우 희귀하게 발견되는 마법의 나무 묘목들입니다. 각 나무마다 독특한 마법의 능력을 가지고 있습니다."
+				""
+				"시간나무는 중앙에 시간나무 시계가 있어 주변 작물의 성장 속도와 블록 엔티티의 작동 속도를 증가시킵니다. 정렬나무는 주변 상자 안의 아이템을 자동으로 정렬합니다. 채광나무는 고정된 광석 자석 역할을 하여 아래의 광맥을 표면으로 끌어올려 쉽게 채굴할 수 있게 합니다. 변환나무는 아래 땅을 인챈트된 숲으로 변환하여 파란색, 핑크색, 녹색으로 변화시킵니다."
+				""
+				"이 묘목들은 매우 희귀하며, 한 번 심으면 잎을 파괴해도 묘목이 드롭되지 않아 재생이 불가능합니다."
+			]
+			icon: "twilightforest:time_sapling"
+			id: "3C583F651D9DE11E"
+			rewards: [
+				{
+					count: 32
+					id: "46BCC4E93EB064EB"
+					item: "twilightforest:time_planks"
+					random_bonus: 32
+					type: "item"
+				}
+				{
+					count: 32
+					id: "08C3B17351380AF6"
+					item: "twilightforest:sorting_planks"
+					random_bonus: 32
+					type: "item"
+				}
+				{
+					count: 32
+					id: "4C4DBCD9817742F4"
+					item: "twilightforest:mining_planks"
+					random_bonus: 32
+					type: "item"
+				}
+				{
+					count: 32
+					id: "5B83AFD1724126BC"
+					item: "twilightforest:transformation_planks"
+					random_bonus: 32
+					type: "item"
+				}
+				{
+					id: "51EE02AD84FAAB98"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			tasks: [
+				{
+					id: "703E87CE27575968"
+					item: "twilightforest:time_sapling"
+					type: "item"
+				}
+				{
+					id: "2D4F503BFB0CDD89"
+					item: "twilightforest:sorting_sapling"
+					type: "item"
+				}
+				{
+					id: "669A5179598AD0A0"
+					item: "twilightforest:mining_sapling"
+					type: "item"
+				}
+				{
+					id: "1BDD486BE86BD06A"
+					item: "twilightforest:transformation_sapling"
+					type: "item"
+				}
+			]
+			title: "마법의 나무들"
+			x: 15.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3C0F6004A66291EC"]
+			description: [
+				"마법의 숲 깊숙한 퀘스트의 숲에서 거대 숫양을 만날 수 있습니다."
+				""
+				"16가지 모든 색의 양털을 우클릭하거나 던져 먹이면 숫양 몸에 해당 색상이 나타납니다. 퀘스트의 숲 중앙 디스펜서에서 일부 양털을 찾을 수 있습니다."
+			]
+			id: "7596B937A4E3883D"
+			optional: true
+			rewards: [{
+				id: "0E49F22772351099"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "15DE7AE55E88FA1F"
+				item: "twilightforest:quest_ram_trophy"
+				type: "item"
+			}]
+			title: "퀘스트 숫양의 비밀"
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	title: "황혼의 숲"
+}

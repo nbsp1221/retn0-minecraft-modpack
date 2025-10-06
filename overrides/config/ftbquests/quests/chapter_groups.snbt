@@ -1,3 +1,5 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "32910AFC83FE47A7", title: "탐험" }
+	]
 }
