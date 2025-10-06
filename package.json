@@ -2,6 +2,11 @@
   "name": "retn0-minecraft-modpack",
   "private": true,
   "type": "module",
+  "dependencies": {
+    "es-toolkit": "1.39.10",
+    "fast-glob": "3.3.2",
+    "ftbq-nbt": "1.4.1"
+  },
   "devDependencies": {
     "@retn0/eslint-config": "1.1.0",
     "eslint": "9.33.0"

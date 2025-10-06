@@ -44,6 +44,19 @@ docker compose down
 **Update manifest after mod changes:**
 Edit `manifest.json` directly - it's the single source of truth. Update `fileID` and `projectID` pairs when upgrading mods. Always regenerate `modlist.html` after manifest changes.
 
+## Quest Summary Tooling
+
+- `scripts/parse-quests.js` generates AI-friendly markdown for any FTB Quests chapter (`.snbt`).
+- Prerequisites: `bun install` (installs `ftbq-nbt`, `es-toolkit`, `fast-glob`).
+- Usage examples:
+  - Single file: `bun scripts/parse-quests.js overrides/config/ftbquests/quests/chapters/twilight_forest.snbt`
+  - Entire folder: `bun scripts/parse-quests.js overrides/config/ftbquests/quests/chapters/`
+- Output lives in `.quest_summaries/` (git-ignored). Each markdown includes:
+  - Resolved quest titles/descriptions (lang files are auto-detected)
+  - Progression tree with entry points, shared branches, cycles
+  - Per-quest Tasks/Rewards plus unlock counts and warnings
+- Re-run after updating quests or localization to keep summaries current.
+
 ## Key File Structure
 
 - `manifest.json` — CurseForge mod list (141 mods). `CF_EXCLUDE_MODS: 657742` in docker-compose excludes Korean Chat Patch (bundled manually).
