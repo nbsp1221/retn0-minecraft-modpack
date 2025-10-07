@@ -59,8 +59,24 @@ function modifyAndesiteAlloyRecipes(event) {
   );
 }
 
+function modifyGroutRecipes(event) {
+  event.remove({ id: 'tconstruct:smeltery/seared/grout' });
+  event.remove({ id: 'tconstruct:smeltery/seared/grout_multiple' });
+
+  event.recipes.create.mixing(
+    '2x tconstruct:grout',
+    ['#forge:clay', 'minecraft:flint', 'farmersdelight:straw', Fluid.of('water', 250)],
+  );
+
+  event.recipes.create.mixing(
+    '8x tconstruct:grout',
+    ['#forge:storage_blocks/clay', '4x minecraft:flint', '4x farmersdelight:straw', Fluid.of('water', 1000)],
+  );
+}
+
 ServerEvents.recipes((event) => {
   modifySmeltingRecipes(event);
   modifyBlastingRecipes(event);
   modifyAndesiteAlloyRecipes(event);
+  modifyGroutRecipes(event);
 });
