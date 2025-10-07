@@ -1,0 +1,24 @@
+services:
+  minecraft-1.16.5:
+    image: itzg/minecraft-server:java11
+    container_name: minecraft-1.16.5
+    ports:
+      - "21165:25565"
+    environment:
+      TZ: Asia/Seoul
+      INIT_MEMORY: 8G
+      MAX_MEMORY: 16G
+      EULA: true
+      VERSION: 1.16.5
+      DIFFICULTY: hard
+      MODPACK_PLATFORM: AUTO_CURSEFORGE
+      CF_API_KEY: ${CF_API_KEY}
+      CF_MODPACK_ZIP: /modpack.zip
+      CF_SLUG: custom
+      CF_FORCE_INCLUDE_MODS: 248787,499826,520110
+      CF_OVERRIDES_EXCLUSIONS: mods/naraechat*.jar
+    volumes:
+      - ./data:/data
+      - ./modpack.zip:/modpack.zip:ro
+    tty: true
+    stdin_open: true
