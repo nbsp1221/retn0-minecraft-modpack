@@ -1,0 +1,881 @@
+{
+  "advancement-plaques": {
+    "name": "Advancement Plaques",
+    "license": "CC-BY-NC-ND-4.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/advancement-plaques",
+    "version": {
+      "1.16.5": "1.4.1"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "iceberg": ">=1.0.0"
+      }
+    }
+  },
+  "alexs-mobs": {
+    "name": "Alex's Mobs",
+    "license": "LGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/alexs-mobs",
+    "version": {
+      "1.16.5": "1.12.1"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "citadel": ">=1.8.0"
+      }
+    }
+  },
+  "appleskin": {
+    "name": "AppleSkin",
+    "license": "Unlicense",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/appleskin",
+    "version": {
+      "1.16.5": "2.4.0"
+    }
+  },
+  "applied-energistics-2": {
+    "name": "Applied Energistics 2",
+    "license": "LGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2",
+    "version": {
+      "1.16.5": "8.4.7"
+    }
+  },
+  "attributefix": {
+    "name": "AttributeFix",
+    "license": "LGPL-2.1",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/attributefix",
+    "version": {
+      "1.16.5": "10.1.4"
+    }
+  },
+  "better-advancements": {
+    "name": "Better Advancements",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/better-advancements",
+    "version": {
+      "1.16.5": "0.1.1.115"
+    }
+  },
+  "biomes-o-plenty": {
+    "name": "Biomes O' Plenty",
+    "license": "CC-BY-NC-ND-4.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty",
+    "version": {
+      "1.16.5": "13.1.0.477"
+    }
+  },
+  "bookshelf": {
+    "name": "Bookshelf",
+    "license": "LGPL-2.1",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/bookshelf",
+    "version": {
+      "1.16.5": "10.4.32"
+    }
+  },
+  "botania": {
+    "name": "Botania",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/botania",
+    "version": {
+      "1.16.5": "420.3"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "curios-api": ">=4.0.3.5",
+        "patchouli": ">=48.0"
+      }
+    }
+  },
+  "catalogue": {
+    "name": "Catalogue",
+    "license": "LGPL-2.1",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/catalogue",
+    "version": {
+      "1.16.5": "1.6.1"
+    }
+  },
+  "cc-tweaked": {
+    "name": "CC: Tweaked",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/cc-tweaked",
+    "version": {
+      "1.16.5": "1.101.0"
+    }
+  },
+  "chisels-and-bits": {
+    "name": "Chisels & Bits",
+    "license": "LGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/chisels-bits",
+    "version": {
+      "1.16.5": "1.0.63"
+    }
+  },
+  "chunk-loaders": {
+    "name": "Chunk Loaders",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/chunk-loaders",
+    "version": {
+      "1.16.5": "1.2.2"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "supermartijn642s-config-lib": ">=1.1.6",
+        "supermartijn642s-core-lib": ">=1.0.19 && <1.1.0"
+      }
+    }
+  },
+  "citadel": {
+    "name": "Citadel",
+    "license": "LGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/citadel",
+    "version": {
+      "1.16.5": "1.8.1"
+    }
+  },
+  "cloth-config": {
+    "name": "Cloth Config",
+    "license": "LGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/cloth-config",
+    "version": {
+      "1.16.5": "4.16.91"
+    }
+  },
+  "cofh-core": {
+    "name": "CoFH Core",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/cofh-core",
+    "version": {
+      "1.16.5": "1.5.2.22"
+    }
+  },
+  "collective": {
+    "name": "Collective",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/collective",
+    "version": {
+      "1.16.5": "5.39"
+    }
+  },
+  "connectedtexturesmod": {
+    "name": "ConnectedTexturesMod",
+    "license": "GPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ctm",
+    "version": {
+      "1.16.5": "1.1.2.6"
+    }
+  },
+  "compact-machines": {
+    "name": "Compact Machines",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/compact-machines",
+    "version": {
+      "1.16.5": "4.0.0-beta.2"
+    }
+  },
+  "configured": {
+    "name": "Configured",
+    "license": "GPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/configured",
+    "version": {
+      "1.16.5": "1.5.3"
+    }
+  },
+  "controlling": {
+    "name": "Controlling",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/controlling",
+    "version": {
+      "1.16.5": "7.0.0.28"
+    }
+  },
+  "corail-tombstone": {
+    "name": "Corail Tombstone",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/corail-tombstone",
+    "version": {
+      "1.16.5": "6.8.6"
+    }
+  },
+  "crafttweaker": {
+    "name": "CraftTweaker",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/crafttweaker",
+    "version": {
+      "1.16.5": "7.1.2.520"
+    }
+  },
+  "cucumber-library": {
+    "name": "Cucumber Library",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/cucumber",
+    "version": {
+      "1.16.5": "4.1.12"
+    }
+  },
+  "curios-api": {
+    "name": "Curios API",
+    "license": "LGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/curios",
+    "version": {
+      "1.16.5": "4.0.5.3"
+    }
+  },
+  "enchantment-descriptions": {
+    "name": "Enchantment Descriptions",
+    "license": "LGPL-2.1",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions",
+    "version": {
+      "1.16.5": "7.1.20"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "bookshelf": ">=9.0.0"
+      }
+    }
+  },
+  "extrastorage": {
+    "name": "ExtraStorage",
+    "license": "AGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/extrastorage",
+    "version": {
+      "1.16.5": "1.6.1"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "refined-storage": ">=1.9.16"
+      }
+    }
+  },
+  "goblin-traders": {
+    "name": "Goblin Traders",
+    "license": "GPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/goblin-traders",
+    "version": {
+      "1.16.5": "1.7.3"
+    }
+  },
+  "iceberg": {
+    "name": "Iceberg",
+    "license": "CC-BY-NC-ND-4.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/iceberg",
+    "version": {
+      "1.16.5": "1.0.45"
+    }
+  },
+  "immersive-engineering": {
+    "name": "Immersive Engineering",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering",
+    "version": {
+      "1.16.5": "5.1.0-148"
+    }
+  },
+  "immersive-railroading": {
+    "name": "Immersive Railroading",
+    "license": "LGPL-2.1",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/immersive-railroading",
+    "version": {
+      "1.16.5": "1.9.1"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "universal-mod-core": ">=1.1.0 && <1.2.0"
+      }
+    }
+  },
+  "industrial-foregoing": {
+    "name": "Industrial Foregoing",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing",
+    "version": {
+      "1.16.5": "3.2.14.6"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "titanium": ">=3.2.5.0"
+      }
+    }
+  },
+  "inventory-sorter": {
+    "name": "Inventory Sorter",
+    "license": "GPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/inventory-sorter",
+    "version": {
+      "1.16.5": "18.1.0"
+    }
+  },
+  "iron-chests": {
+    "name": "Iron Chests",
+    "license": "GPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/iron-chests",
+    "version": {
+      "1.16.5": "11.2.21"
+    }
+  },
+  "iron-jetpacks": {
+    "name": "Iron Jetpacks",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks",
+    "version": {
+      "1.16.5": "4.2.3"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "cucumber-library": ">=4.1.11"
+      }
+    }
+  },
+  "iron-shulker-boxes": {
+    "name": "Iron Shulker Boxes",
+    "license": "GPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/iron-shulker-boxes",
+    "version": {
+      "1.16.5": "5.1.11"
+    }
+  },
+  "jade": {
+    "name": "Jade",
+    "license": "CC-BY-NC-SA-4.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/jade",
+    "version": {
+      "1.16.5": "2.8.3"
+    }
+  },
+  "journeymap": {
+    "name": "JourneyMap",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/journeymap",
+    "version": {
+      "1.16.5": "5.8.5p6"
+    }
+  },
+  "just-enough-calculation": {
+    "name": "Just Enough Calculation",
+    "license": "LGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation",
+    "version": {
+      "1.16.5": "3.9.2"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "just-enough-items": ">=7.0.1.10"
+      }
+    }
+  },
+  "just-enough-items": {
+    "name": "Just Enough Items",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/jei",
+    "version": {
+      "1.16.5": "7.7.1.153"
+    }
+  },
+  "just-enough-resources": {
+    "name": "Just Enough Resources",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer",
+    "version": {
+      "1.16.5": "0.12.1.128"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "just-enough-items": ">=6.0.0.0"
+      }
+    }
+  },
+  "legendary-tooltips": {
+    "name": "Legendary Tooltips",
+    "license": "CC-BY-NC-ND-4.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips",
+    "version": {
+      "1.16.5": "1.1.7"
+    }
+  },
+  "mantle": {
+    "name": "Mantle",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mantle",
+    "version": {
+      "1.16.5": "1.6.157"
+    }
+  },
+  "mcjtylib": {
+    "name": "McJtyLib",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mcjtylib",
+    "version": {
+      "1.16.5": "5.1.8"
+    }
+  },
+  "mekanism": {
+    "name": "Mekanism",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mekanism",
+    "version": {
+      "1.16.5": "10.1.2"
+    }
+  },
+  "mekanism-additions": {
+    "name": "Mekanism Additions",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mekanism-additions",
+    "version": {
+      "1.16.5": "10.1.2"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "mekanism": ">=10.1.2"
+      }
+    }
+  },
+  "mekanism-generators": {
+    "name": "Mekanism Generators",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mekanism-generators",
+    "version": {
+      "1.16.5": "10.1.2"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "mekanism": ">=10.1.2"
+      }
+    }
+  },
+  "mekanism-tools": {
+    "name": "Mekanism Tools",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mekanism-tools",
+    "version": {
+      "1.16.5": "10.1.2"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "mekanism": ">=10.1.2"
+      }
+    }
+  },
+  "mob-grinding-utils": {
+    "name": "Mob Grinding Utils",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mob-grinding-utils",
+    "version": {
+      "1.16.5": "0.4.37"
+    }
+  },
+  "more-red": {
+    "name": "More Red",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/more-red",
+    "version": {
+      "1.16.5": "2.1.1.0"
+    }
+  },
+  "mouse-tweaks": {
+    "name": "Mouse Tweaks",
+    "license": "BSD-3-Clause",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks",
+    "version": {
+      "1.16.5": "2.14"
+    }
+  },
+  "narae-chat": {
+    "name": "Narae Chat",
+    "license": "LGPL-3.0",
+    "url": "https://github.com/sokcuri/NaraeChat",
+    "version": {
+      "1.16.5": "0.7.1"
+    }
+  },
+  "neat": {
+    "name": "Neat",
+    "license": "CC-BY-NC-SA-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/neat",
+    "version": {
+      "1.16.5": "1.7-27"
+    }
+  },
+  "oh-the-biomes-youll-go": {
+    "name": "Oh The Biomes You'll Go",
+    "license": "LGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go",
+    "version": {
+      "1.16.5": "1.3.4"
+    }
+  },
+  "patchouli": {
+    "name": "Patchouli",
+    "license": "CC-BY-NC-SA-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/patchouli",
+    "version": {
+      "1.16.5": "53.3"
+    }
+  },
+  "prism": {
+    "name": "Prism",
+    "license": "CC-BY-NC-ND-4.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/prism-lib",
+    "version": {
+      "1.16.5": "1.0.1"
+    }
+  },
+  "refined-storage": {
+    "name": "Refined Storage",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/refined-storage",
+    "version": {
+      "1.16.5": "1.9.18"
+    }
+  },
+  "refined-storage-addons": {
+    "name": "Refined Storage Addons",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/refined-storage-addons",
+    "version": {
+      "1.16.5": "0.7.4"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "refined-storage": ">=1.9.6"
+      }
+    }
+  },
+  "repurposed-structures": {
+    "name": "Repurposed Structures",
+    "license": "LGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/repurposed-structures",
+    "version": {
+      "1.16.5": "3.4.7"
+    }
+  },
+  "rftools-base": {
+    "name": "RFTools Base",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/rftools-base",
+    "version": {
+      "1.16.5": "2.1.5"
+    }
+  },
+  "rftools-builder": {
+    "name": "RFTools Builder",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/rftools-builder",
+    "version": {
+      "1.16.5": "3.1.11"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "mcjtylib": ">=5.1.7",
+        "rftoolsbase": ">=2.1.4"
+      }
+    }
+  },
+  "rftools-control": {
+    "name": "RFTools Control",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/rftools-control",
+    "version": {
+      "1.16.5": "4.1.18"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "mcjtylib": ">=5.1.7",
+        "rftoolsbase": ">=2.1.4"
+      }
+    }
+  },
+  "rftools-dimensions": {
+    "name": "RFTools Dimensions",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/rftools-dimensions",
+    "version": {
+      "1.16.5": "7.0.21"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "mcjtylib": ">=5.1.7",
+        "rftoolsbase": ">=2.1.4"
+      }
+    }
+  },
+  "rftools-power": {
+    "name": "RFTools Power",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/rftools-power",
+    "version": {
+      "1.16.5": "3.0.14"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "mcjtylib": ">=5.1.4",
+        "rftoolsbase": ">=2.1.1"
+      }
+    }
+  },
+  "rftools-storage": {
+    "name": "RFTools Storage",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/rftools-storage",
+    "version": {
+      "1.16.5": "2.0.19"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "mcjtylib": ">=5.1.4",
+        "rftoolsbase": ">=2.1.1"
+      }
+    }
+  },
+  "rftools-utility": {
+    "name": "RFTools Utility",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/rftools-utility",
+    "version": {
+      "1.16.5": "3.1.16"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "mcjtylib": ">=5.1.7",
+        "rftoolsbase": ">=2.1.4"
+      }
+    }
+  },
+  "rubidium": {
+    "name": "Rubidium",
+    "license": "LGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/rubidium",
+    "version": {
+      "1.16.5": "0.2.10"
+    }
+  },
+  "selene": {
+    "name": "Selene",
+    "license": "LGPL-2.1",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/selene",
+    "version": {
+      "1.16.5": "1.0"
+    }
+  },
+  "shutup-experimental-settings": {
+    "name": "Shutup Experimental Settings",
+    "license": "GPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/shutup-experimental-settings",
+    "version": {
+      "1.16.5": "1.0.3"
+    }
+  },
+  "sophisticated-backpacks": {
+    "name": "Sophisticated Backpacks",
+    "license": "GPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks",
+    "version": {
+      "1.16.5": "3.15.19.721"
+    }
+  },
+  "spark": {
+    "name": "spark",
+    "license": "GPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/spark",
+    "version": {
+      "1.16.5": "1.9.1"
+    }
+  },
+  "stack-refill": {
+    "name": "Stack Refill",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/stack-refill",
+    "version": {
+      "1.16.5": "3.2"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "collective": ">=5.0"
+      }
+    }
+  },
+  "stoneholm": {
+    "name": "Stoneholm",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/stoneholm-forge",
+    "version": {
+      "1.16.5": "1.2"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "cloth-config": ">=4.1"
+      }
+    }
+  },
+  "supermartijn642s-config-lib": {
+    "name": "SuperMartijn642's Config Lib",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib",
+    "version": {
+      "1.16.5": "1.1.6"
+    }
+  },
+  "supermartijn642s-core-lib": {
+    "name": "SuperMartijn642's Core Lib",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib",
+    "version": {
+      "1.16.5": "1.0.19"
+    }
+  },
+  "supplementaries": {
+    "name": "Supplementaries",
+    "license": "LGPL-2.1",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/supplementaries",
+    "version": {
+      "1.16.5": "0.18.2"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "selene": ">=1.0"
+      }
+    }
+  },
+  "the-twilight-forest": {
+    "name": "The Twilight Forest",
+    "license": "LGPL-2.1",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest",
+    "version": {
+      "1.16.5": "4.0.870"
+    }
+  },
+  "thermal-cultivation": {
+    "name": "Thermal Cultivation",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/thermal-cultivation",
+    "version": {
+      "1.16.5": "1.5.0.4"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "cofh-core": ">=1.5.0.0 && < 1.6.0.0",
+        "thermal-foundation": ">=1.5.0.0 && < 1.6.0.0"
+      }
+    }
+  },
+  "thermal-expansion": {
+    "name": "Thermal Expansion",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/thermal-expansion",
+    "version": {
+      "1.16.5": "1.5.2.16"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "cofh-core": ">=1.5.0.0 && < 1.6.0.0",
+        "thermal-foundation": ">=1.5.0.0 && < 1.6.0.0"
+      }
+    }
+  },
+  "thermal-foundation": {
+    "name": "Thermal Foundation",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/thermal-foundation",
+    "version": {
+      "1.16.5": "1.5.2.30"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "cofh-core": ">=1.5.0.0 && < 1.6.0.0"
+      }
+    }
+  },
+  "thermal-innovation": {
+    "name": "Thermal Innovation",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/thermal-innovation",
+    "version": {
+      "1.16.5": "1.5.0.4"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "cofh-core": ">=1.5.0.0 && < 1.6.0.0",
+        "thermal-foundation": ">=1.5.0.0 && < 1.6.0.0"
+      }
+    }
+  },
+  "thermal-locomotion": {
+    "name": "Thermal Locomotion",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/thermal-locomotion",
+    "version": {
+      "1.16.5": "1.5.0.4"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "cofh-core": ">=1.5.0.0 && < 1.6.0.0",
+        "thermal-foundation": ">=1.5.0.0 && < 1.6.0.0"
+      }
+    }
+  },
+  "tinkers-construct": {
+    "name": "Tinkers' Construct",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/tinkers-construct",
+    "version": {
+      "1.16.5": "3.3.4.335"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "mantle": ">=1.6.152"
+      }
+    }
+  },
+  "tiny-redstone": {
+    "name": "Tiny Redstone",
+    "license": "GPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/tiny-redstone",
+    "version": {
+      "1.16.5": "1.13.7"
+    }
+  },
+  "titanium": {
+    "name": "Titanium",
+    "license": "LGPL-3.0",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/titanium",
+    "version": {
+      "1.16.5": "3.2.8.4"
+    }
+  },
+  "track-api": {
+    "name": "Track API",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/track-api",
+    "version": {
+      "1.16.5": "1.2.1"
+    }
+  },
+  "traffic-control-plus-roads": {
+    "name": "Traffic Control + Roads",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/traffic-control-roads-mod-by-teerth",
+    "version": {
+      "1.16.5": "3.0.0"
+    }
+  },
+  "universal-mod-core": {
+    "name": "Universal Mod Core",
+    "license": "LGPL-2.1",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/universal-mod-core",
+    "version": {
+      "1.16.5": "1.1.3"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "track-api": ">=1.2.1"
+      }
+    }
+  },
+  "xnet": {
+    "name": "XNet",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/xnet",
+    "version": {
+      "1.16.5": "3.0.17"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "mcjtylib": ">=5.1.7",
+        "rftoolsbase": ">=2.1.4"
+      }
+    }
+  },
+  "xnet-gases": {
+    "name": "XNet Gases",
+    "license": "MIT",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/xnet-gases",
+    "version": {
+      "1.16.5": "2.3.10"
+    },
+    "dependencies": {
+      "1.16.5": {
+        "mekanism": ">=10.0.0",
+        "xnet": ">=3.0.0"
+      }
+    }
+  }
+}
