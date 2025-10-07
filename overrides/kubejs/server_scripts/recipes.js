@@ -27,7 +27,40 @@ function modifyBlastingRecipes(event) {
   });
 }
 
+function modifyAndesiteAlloyRecipes(event) {
+  // Remove existing recipes
+  event.remove({ id: 'create:crafting/materials/andesite_alloy' });
+  event.remove({ id: 'create:crafting/materials/andesite_alloy_from_zinc' });
+  event.remove({ id: 'create:mixing/andesite_alloy' });
+  event.remove({ id: 'create:mixing/andesite_alloy_from_zinc' });
+  event.remove({ id: 'tconstruct:compat/create/andesite_alloy_iron' });
+  event.remove({ id: 'tconstruct:compat/create/andesite_alloy_zinc' });
+
+  // Add new recipes using algal bricks
+  event.shaped(Item.of('create:andesite_alloy', 2), [
+    'AA',
+    'BB',
+  ], {
+    A: '#forge:andesite',
+    B: 'architects_palette:algal_brick',
+  });
+
+  event.shaped(Item.of('create:andesite_alloy', 2), [
+    'BB',
+    'AA',
+  ], {
+    A: '#forge:andesite',
+    B: 'architects_palette:algal_brick',
+  });
+
+  event.recipes.create.mixing(
+    Item.of('create:andesite_alloy', 2),
+    ['#forge:andesite', 'architects_palette:algal_brick'],
+  );
+}
+
 ServerEvents.recipes((event) => {
   modifySmeltingRecipes(event);
   modifyBlastingRecipes(event);
+  modifyAndesiteAlloyRecipes(event);
 });
