@@ -744,48 +744,48 @@
 				{
 					id: "31C7F19424B16482"
 					item: "twilightforest:raw_venison"
-						type: "item"
+					type: "item"
 				}
 				{
 					id: "4F2C19150525B59B"
 					item: "twilightforest:cooked_venison"
-						type: "item"
+					type: "item"
 				}
 				{
 					id: "370103E84BB3A9EF"
 					item: "twilightforest:maze_wafer"
-						type: "item"
+					type: "item"
 				}
 				{
 					id: "11441738FEA96951"
 					item: "twilightforest:raw_meef"
-						type: "item"
+					type: "item"
 				}
 				{
 					id: "56B045D5FC8085CC"
 					item: "twilightforest:cooked_meef"
-						type: "item"
+					type: "item"
 				}
 				{
 					id: "4FFA44743CFB9FDE"
 					item: "twilightforest:meef_stroganoff"
-						type: "item"
+					type: "item"
 				}
 				{
 					id: "364EDDDBBA0C7A8A"
 					item: "twilightforest:hydra_chop"
-						type: "item"
+					type: "item"
 				}
 				{
 					id: "72809EE87B487688"
 					item: "twilightforest:experiment_115"
-						type: "item"
+					type: "item"
 				}
 				{
 					advancement: "twilightforest:twilight_dinner"
 					criterion: ""
 					id: "6D5AFF9FEA49D4A7"
-						type: "advancement"
+					type: "advancement"
 				}
 			]
 			title: "황혼의 음식"
@@ -935,7 +935,7 @@
 			description: [
 				"화염석 주괴로 화염석 검과 화염석 곡괭이를 제작하세요."
 				""
-				"화염석 검은 8의 피해를 주며 점화 II 효과가 있습니다. 화염석 곡괭이는 캐낸 광석을 자동으로 제련합니다. 돌을 캐면 조약돌이 아닌 돌을, 철광석을 캐면 철 주괴를 바로 얻습니다."
+				"화염석 검은 8의 피해를 주며 발화 II 효과가 있습니다. 화염석 곡괭이는 캐낸 광석을 자동으로 제련합니다. 돌을 캐면 조약돌이 아닌 돌을, 철광석을 캐면 철 주괴를 바로 얻습니다."
 			]
 			id: "0826A6022681999E"
 			rewards: [{
@@ -1553,7 +1553,7 @@
 				item: {
 					Count: 1
 					id: "twilightforest:glass_sword"
-						tag: {
+					tag: {
 						Damage: 0
 					}
 				}
