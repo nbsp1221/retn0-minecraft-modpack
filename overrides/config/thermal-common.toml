@@ -13,7 +13,7 @@
 
 		[World.Features.Lead]
 			#Whether this feature should naturally spawn in the world.
-			Enable = true
+			Enable = false
 
 		[World.Features.Nickel]
 			#Whether this feature should naturally spawn in the world.
@@ -33,7 +33,7 @@
 
 		[World.Features.Tin]
 			#Whether this feature should naturally spawn in the world.
-			Enable = true
+			Enable = false
 
 		[World.Features.Niter]
 			#Whether this feature should naturally spawn in the world.
