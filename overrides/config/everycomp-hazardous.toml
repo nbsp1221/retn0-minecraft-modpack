@@ -39,7 +39,7 @@
 	#        "chipped:.*"						COMMENT: .* is an regex which will exclude all of EntrySets from one Module - Wood-Good ONLY
 	#    ]
 	#
-	blacklist = []
+	blacklist = ["quark:hedge"]
 
 [module]
 	#Exclude Module From Wood-Good, Stone-Zone & Gems-Realm
