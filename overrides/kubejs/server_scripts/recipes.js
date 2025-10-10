@@ -75,9 +75,65 @@ function modifyGroutRecipes(event) {
   );
 }
 
+function modifyRubberRecipes(event) {
+  // Remove existing rubber recipes
+  event.remove({ id: 'thermal:rubber_from_vine' });
+  event.remove({ id: 'thermal:rubber_from_dandelion' });
+  event.remove({ id: 'thermal:rubber_3' });
+
+  // Remove existing cured rubber recipes
+  event.remove({ type: 'minecraft:smelting', output: 'thermal:cured_rubber' });
+  event.remove({ id: 'thermal:machines/smelter/smelter_cured_rubber' });
+
+  // Coagulation process (using low-efficiency resin)
+  event.recipes.create.mixing(
+    'thermal:rubber',
+    [
+      Fluid.of('thermal:resin', 1000),
+      '#forge:slimeballs',
+    ],
+  ).heated();
+
+  // Coagulation process (using high-efficiency latex)
+  event.recipes.create.mixing(
+    '4x thermal:rubber',
+    [
+      Fluid.of('thermal:latex', 1000),
+      '#forge:slimeballs',
+    ],
+  );
+
+  // Vulcanization process
+  event.recipes.create.mixing(
+    'thermal:cured_rubber',
+    [
+      'thermal:rubber',
+      '#forge:dusts/sulfur',
+    ],
+  ).heated();
+}
+
+function modifyBeltRecipes(event) {
+  event.remove({ output: 'create:belt_connector' });
+
+  event.shaped('2x create:belt_connector', [
+    'AAA',
+    'AAA',
+  ], {
+    A: 'thermal:cured_rubber',
+  });
+
+  event.recipes.create.deploying(
+    'create:belt_connector',
+    ['thermal:cured_rubber', '#forge:fabric_hemp'],
+  );
+}
+
 ServerEvents.recipes((event) => {
   modifySmeltingRecipes(event);
   modifyBlastingRecipes(event);
   modifyAndesiteAlloyRecipes(event);
   modifyGroutRecipes(event);
+  modifyRubberRecipes(event);
+  modifyBeltRecipes(event);
 });
